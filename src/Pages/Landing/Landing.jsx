@@ -7,42 +7,35 @@ import Style from "./Landing.module.css";
 function Landing() {
   return (
     <>
+      {/* PERSPECTIVE FONT AREA */}
       <div className={Style.perspectiveWrapper}>
-        {/**/}
         <div className={Style.perspectiveText}>
           <div className={Style.perspectiveLine}>
             <p className={Style.options}></p>
             <p className={Style.options}>About Me</p>
           </div>
-          {/**/}
           <div className={Style.perspectiveLine}>
             <p className={Style.options}>About Me</p>
             <p className={Style.options}></p>
           </div>
         </div>
-        {/**/}
         <br />
-        {/**/}
         <div className={Style.perspectiveText}>
           <div className={Style.perspectiveLine}>
             <p className={Style.options}></p>
             <p className={Style.options}>My Work</p>
           </div>
-          {/**/}
           <div className={Style.perspectiveLine}>
             <p className={Style.options}>My Work</p>
             <p className={Style.options}></p>
           </div>
         </div>
-        {/**/}
         <br />
-        {/**/}
         <div className={Style.perspectiveText}>
           <div className={Style.perspectiveLine}>
             <p className={Style.options}></p>
             <p className={Style.options}>Contact Me</p>
           </div>
-          {/**/}
           <div className={Style.perspectiveLine}>
             <p className={Style.options}>Contact Me</p>
             <p className={Style.options}></p>
