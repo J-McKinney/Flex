@@ -153,6 +153,7 @@ class MyNavBar extends Component {
               {/* NAVBAR CONTENT */}
 
               {/* COLLAPSE CONTENT */}
+              {/* COLLAPSE CONTENT */}
               <Collapse in={this.state.open}>
                 <div
                   id="example-collapse-text"
@@ -364,6 +365,7 @@ class MyNavBar extends Component {
                   </div>
                 </div>
               </Collapse>
+              {/* COLLAPSE CONTENT */}
               {/* COLLAPSE CONTENT */}
 
               {/* WRAPPER */}
