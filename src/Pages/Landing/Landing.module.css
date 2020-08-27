@@ -1,0 +1,19 @@
+.wrapper {
+  text-align: center;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  box-sizing: border-box;
+  justify-content: center;
+  top: 0;
+}
+
+.menuContainer {
+  /* background-color: #282c34; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: auto;
+}
