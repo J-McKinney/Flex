@@ -38,7 +38,7 @@
   margin: 0;
   height: 50px;
   line-height: 50px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.65s ease-in-out;
 }
 
 .perspectiveLine:nth-child(odd) {
