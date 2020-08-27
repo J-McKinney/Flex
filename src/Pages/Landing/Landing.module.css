@@ -25,17 +25,16 @@
   text-transform: uppercase;
   text-align: center;
   justify-content: center;
-  /* margin-top: 1%; */
 }
 
 .perspectiveLine {
-  /* background-color: #282c34; */
   height: 40px;
   overflow: hidden;
   position: relative;
 }
 
 .options {
+  flex: 50%;
   margin: 0;
   height: 50px;
   line-height: 50px;
@@ -45,31 +44,42 @@
 .perspectiveLine:nth-child(odd) {
   transform: skew(60deg, -30deg) scaleY(0.667);
 }
-
 .perspectiveLine:nth-child(even) {
   transform: skew(0deg, -30deg) scaleY(1.333);
 }
-
 .perspectiveText:hover p {
   transform: translate(0, -50px);
 }
-
 .perspectiveLine:nth-child(1) {
   left: 29px;
 }
-
 .perspectiveLine:nth-child(2) {
   left: 58px;
 }
-
 .perspectiveLine:nth-child(3) {
   left: 87px;
 }
-
 .perspectiveLine:nth-child(4) {
   left: 116px;
 }
-
 .perspectiveLine:nth-child(5) {
   left: 145px;
+}
+
+@media screen and (max-width: 992px) {
+  .options {
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .perspectiveWrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .perspectiveLine {
+    margin-left: 30px;
+  }
 }
