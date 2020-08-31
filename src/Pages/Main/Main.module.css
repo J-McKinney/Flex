@@ -1,15 +1,10 @@
 body {
-  /* width: 100vw; */
-  /* height: 100vh; */
   margin: 0;
   background: #00000000;
   overflow: auto;
   overflow-x: hidden;
   display: flex;
   flex-wrap: wrap-reverse;
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 canvas {
@@ -21,9 +16,7 @@ canvas {
 
 .starWrapper {
   width: 100vw;
-  /* height: 100vh; */
   display: flex;
-  /* flex-direction: column; */
   text-align: center;
   justify-content: center;
   align-items: center;
