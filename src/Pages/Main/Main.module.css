@@ -1,3 +1,7 @@
+.siteWrapper {
+  background-color: #ffffff;
+}
+
 .mainWrapper {
   display: flex;
   flex-wrap: wrap-reverse;

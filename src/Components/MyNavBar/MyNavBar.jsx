@@ -16,14 +16,11 @@ class MyNavBar extends Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.onscroll);
-    // console.log("componentDidMount : ", this.state.open);
   }
   componentWillUnmount() {
     window.removeEventListener("scroll", this.onscroll);
   }
-  componentDidUpdate() {
-    // console.log("componentDidUpdate: ", this.state.open);
-  }
+  componentDidUpdate() {}
 
   onscroll = () => {
     this.setState({
@@ -124,8 +121,6 @@ class MyNavBar extends Component {
                 </Col>
               </Row>
               {/* NAVBAR CONTENT */}
-
-              {/* COLLAPSE CONTENT */}
               {/* COLLAPSE CONTENT */}
               <Collapse in={this.state.open}>
                 <div
@@ -215,8 +210,6 @@ class MyNavBar extends Component {
                 </div>
               </Collapse>
               {/* COLLAPSE CONTENT */}
-              {/* COLLAPSE CONTENT */}
-
               {/* WRAPPER */}
             </div>
           </div>
