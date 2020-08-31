@@ -1,5 +1,5 @@
 import React from "react";
-import MyNavBar from "../../Components/MyNavBar/MyNavBar";
+// import MyNavBar from "../../Components/MyNavBar/MyNavBar";
 import MyFooter from "../../Components/MyFooter/MyFooter";
 // import Stars from "../../Components/Stars/StarsContainer";
 // import Container from "react-bootstrap/Container";
@@ -15,11 +15,11 @@ function Landing() {
         {/* Site Wrapper */}
 
         {/* Navigation Bar */}
-        <MyNavBar />
+        {/* <MyNavBar /> */}
         {/* Navigation Bar */}
 
         {/* PERSPECTIVE FONT AREA */}
-        <div className={Style.perspectiveWrapper}>
+        {/* <div className={Style.perspectiveWrapper}>
           <div className={Style.perspectiveText}>
             <div className={Style.perspectiveLine}>
               <p className={Style.options}></p>
@@ -76,7 +76,7 @@ function Landing() {
               <p className={Style.options}></p>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* PERSPECTIVE FONT AREA */}
 
         {/* Curved Div */}

@@ -49,7 +49,7 @@ class MyNavBar extends Component {
   render() {
     const active = {
       zIndex: "1001 !important",
-      backgroundColor: "#5e6f819a",
+      backgroundColor: "#575f68ec",
       color: "#fff",
       position: "fixed",
       height: "50px",
@@ -147,54 +147,68 @@ class MyNavBar extends Component {
                       </Row>
                       <Row className={NavStyle.contentRow}>
                         <Col className={NavStyle.contentCol}>
-                          <ul className={NavStyle.ul}>
-                            <li className={NavStyle.li}>
-                              <a
-                                href="#about-me"
-                                className={NavStyle.a}
-                                style={{ color: "#fff" }}
-                              >
-                                About Me
-                              </a>
-                            </li>
-                            <li className={NavStyle.li}>
-                              <a
-                                href="#portfolio"
-                                className={NavStyle.a}
-                                style={{ color: "#fff" }}
-                              >
-                                Portfolio
-                              </a>
-                            </li>
-                            <li className={NavStyle.li}>
-                              <a
-                                href="#skills"
-                                className={NavStyle.a}
-                                style={{ color: "#fff" }}
-                              >
-                                Skills
-                              </a>
-                            </li>
-                            <li className={NavStyle.li}>
-                              <a
-                                href="#current-work"
-                                className={NavStyle.a}
-                                style={{ color: "#fff" }}
-                              >
-                                Current Work
-                              </a>
-                            </li>
-                            <li className={NavStyle.li}>
-                              <a
-                                href="#contact-me"
-                                className={NavStyle.a}
-                                style={{ color: "#fff" }}
-                              >
-                                Contact Me
-                              </a>
-                            </li>
-                          </ul>
+                          {/* PERSPECTIVE FONT AREA */}
+                          <div className={NavStyle.perspectiveWrapper}>
+                            <div className={NavStyle.perspectiveText}>
+                              <div className={NavStyle.perspectiveLine}>
+                                <p className={NavStyle.options}></p>
+                                <p className={NavStyle.options}>
+                                  <a
+                                    href="#top-of-page"
+                                    className={NavStyle.a}
+                                    style={{ color: "#61dafb" }}
+                                  >
+                                    About Me
+                                  </a>
+                                </p>
+                              </div>
+                              <div className={NavStyle.perspectiveLine}>
+                                <p className={NavStyle.options}>About Me</p>
+                                <p className={NavStyle.options}></p>
+                              </div>
+                            </div>
+                            <br />
+                            <div className={NavStyle.perspectiveText}>
+                              <div className={NavStyle.perspectiveLine}>
+                                <p className={NavStyle.options}></p>
+                                <p className={NavStyle.options}>
+                                  <a
+                                    href="#top-of-page"
+                                    className={NavStyle.a}
+                                    style={{ color: "#61dafb" }}
+                                  >
+                                    Portfolio
+                                  </a>
+                                </p>
+                              </div>
+                              <div className={NavStyle.perspectiveLine}>
+                                <p className={NavStyle.options}>Portfolio</p>
+                                <p className={NavStyle.options}></p>
+                              </div>
+                            </div>
+                            <br />
+                            <div className={NavStyle.perspectiveText}>
+                              <div className={NavStyle.perspectiveLine}>
+                                <p className={NavStyle.options}></p>
+                                <p className={NavStyle.options}>
+                                  <a
+                                    href="#top-of-page"
+                                    className={NavStyle.a}
+                                    style={{ color: "#61dafb" }}
+                                  >
+                                    Contact Me
+                                  </a>
+                                </p>
+                              </div>
+                              <div className={NavStyle.perspectiveLine}>
+                                <p className={NavStyle.options}>Contact Me</p>
+                                <p className={NavStyle.options}></p>
+                              </div>
+                            </div>
+                          </div>
+                          {/* PERSPECTIVE FONT AREA */}
                         </Col>
+                        {/*  */}
                       </Row>
                     </Container>
                   </div>

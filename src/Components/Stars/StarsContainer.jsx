@@ -34,7 +34,7 @@ class StarsContainer extends Component {
         Math.random() * 600 - 300
       );
       star.velocity = 0;
-      star.acceleration = 0.02;
+      star.acceleration = 0.001;
       starGeo.vertices.push(star);
     }
     let sprite = new THREE.TextureLoader().load(STARLITE);
@@ -63,9 +63,9 @@ class StarsContainer extends Component {
       }
     });
     starGeo.verticesNeedUpdate = true;
-    stars.rotation.y += 0.004;
+    stars.rotation.y += 0.001;
     stars.rotation.x = -1.5;
-    stars.rotation.z = -44;
+    stars.rotation.z = -44; //-41
     renderer.render(scene, camera);
     requestAnimationFrame(this.animate);
   };

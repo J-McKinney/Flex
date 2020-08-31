@@ -9,7 +9,7 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
 }
 
 .starWrapper {
@@ -36,6 +36,8 @@ canvas {
   justify-content: center;
   display: flex;
   color: #898f9c;
+  position: relative;
+  z-index: 10;
   /* flex-direction: column; */
 }
 
@@ -43,9 +45,8 @@ canvas {
   color: #61dafb;
 }
 
-.mainWrapper {
+/* .mainWrapper {
   width: 100%;
-  /* height: 600px; */
   position: relative;
   background-color: #ff0000;
   display: flex;
@@ -53,7 +54,6 @@ canvas {
   overflow: auto;
   box-sizing: border-box;
   justify-content: center;
-  /* top: 0; */
 }
 
 .row {
@@ -63,4 +63,4 @@ canvas {
 
 .col {
   flex: 50%;
-}
+} */

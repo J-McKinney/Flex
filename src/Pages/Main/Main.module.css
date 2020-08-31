@@ -3,5 +3,12 @@
   flex-wrap: wrap-reverse;
   position: relative;
   top: 0;
-  margin-bottom: 46vh;
+  margin-bottom: 43vh;
 }
+
+/* Curved Div */
+.svg {
+  z-index: 1;
+  position: relative;
+}
+/* Curved Div */
