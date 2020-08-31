@@ -96,34 +96,7 @@ class MyNavBar extends Component {
               {/* WRAPPER */}
 
               {/* NAVBAR CONTENT */}
-              <Row>
-                <Col id={NavStyle.name} className="col-md-9">
-                  <a
-                    href="#top-of-page"
-                    className={NavStyle.a}
-                    style={{ color: "#fff" }}
-                  >
-                    Jesse McKinney
-                  </a>
-                </Col>
-                <Col className={NavStyle.projects}>
-                  <a
-                    href="#project-section"
-                    className={NavStyle.a}
-                    style={{ color: "#fff" }}
-                  >
-                    Projects
-                  </a>
-                </Col>
-                <Col className={NavStyle.contact}>
-                  <a
-                    href="#contact-section"
-                    className={NavStyle.a}
-                    style={{ color: "#fff" }}
-                  >
-                    Contact
-                  </a>
-                </Col>
+              <Row className={NavStyle.navBarRow}>
                 <Col>
                   {/* NAVBAR BUTTON */}
                   <Button
@@ -162,200 +135,62 @@ class MyNavBar extends Component {
                   <div className={NavStyle.contentDiv}>
                     <Container className={NavStyle.contentContainer}>
                       <Row className={NavStyle.contentHeader}>
-                        <h3 className={NavStyle.h3}>Favorite Projects</h3>
+                        <h3 className={NavStyle.h3}>
+                          <a
+                            href="#top-of-page"
+                            className={NavStyle.a}
+                            style={{ color: "#fff" }}
+                          >
+                            Jesse McKinney
+                          </a>
+                        </h3>
                       </Row>
-                      <hr />
                       <Row className={NavStyle.contentRow}>
                         <Col className={NavStyle.contentCol}>
                           <ul className={NavStyle.ul}>
                             <li className={NavStyle.li}>
                               <a
-                                href="https://j-mckinney.github.io/InfinityStars/"
+                                href="#about-me"
                                 className={NavStyle.a}
-                                style={{
-                                  color: "#fff",
-                                  // backgroundColor: "black",
-                                  borderRadius: "50px",
-                                  padding: "5px",
-                                }}
+                                style={{ color: "#fff" }}
                               >
-                                Infinity Stars
+                                About Me
                               </a>
                             </li>
                             <li className={NavStyle.li}>
                               <a
-                                href="https://j-mckinney.github.io/InfinityBox/"
+                                href="#portfolio"
                                 className={NavStyle.a}
-                                style={{
-                                  color: "#fff",
-                                  // backgroundColor: "black",
-                                  borderRadius: "50px",
-                                  padding: "5px",
-                                }}
+                                style={{ color: "#fff" }}
                               >
-                                Infinity Box
+                                Portfolio
                               </a>
                             </li>
                             <li className={NavStyle.li}>
                               <a
-                                href="/"
+                                href="#skills"
                                 className={NavStyle.a}
-                                style={{
-                                  color: "#fff",
-                                  // backgroundColor: "black",
-                                  borderRadius: "50px",
-                                  padding: "5px",
-                                }}
+                                style={{ color: "#fff" }}
                               >
-                                Thanos Snap Effect
+                                Skills
                               </a>
                             </li>
                             <li className={NavStyle.li}>
                               <a
-                                href="/"
+                                href="#current-work"
                                 className={NavStyle.a}
-                                style={{
-                                  color: "#fff",
-                                  // backgroundColor: "black",
-                                  borderRadius: "50px",
-                                  padding: "5px",
-                                }}
+                                style={{ color: "#fff" }}
                               >
-                                SMB3 Card Game
-                              </a>
-                            </li>
-                          </ul>
-                        </Col>
-                        <Col className={NavStyle.contentCol}>
-                          <ul className={NavStyle.ul}>
-                            <li className={NavStyle.li}>
-                              <a
-                                href="https://j-mckinney.github.io/ConfettiEffect/"
-                                className={NavStyle.a}
-                                style={{
-                                  color: "#fff",
-                                  // backgroundColor: "black",
-                                  borderRadius: "50px",
-                                  padding: "5px",
-                                }}
-                              >
-                                Confetti Effect
+                                Current Work
                               </a>
                             </li>
                             <li className={NavStyle.li}>
                               <a
-                                href="https://j-mckinney.github.io/CrackedFont/"
+                                href="#contact-me"
                                 className={NavStyle.a}
-                                style={{
-                                  color: "#fff",
-                                  // backgroundColor: "black",
-                                  borderRadius: "50px",
-                                  padding: "5px",
-                                }}
+                                style={{ color: "#fff" }}
                               >
-                                Cracked Font
-                              </a>
-                            </li>
-                            <li className={NavStyle.li}>
-                              <a
-                                href="/"
-                                className={NavStyle.a}
-                                style={{
-                                  color: "#fff",
-                                  // backgroundColor: "black",
-                                  borderRadius: "50px",
-                                  padding: "5px",
-                                }}
-                              >
-                                Curved Container
-                              </a>
-                            </li>
-                            <li className={NavStyle.li}>
-                              <a
-                                href="https://j-mckinney.github.io/PerspectiveFont/"
-                                className={NavStyle.a}
-                                style={{
-                                  color: "#fff",
-                                  // backgroundColor: "black",
-                                  borderRadius: "50px",
-                                  padding: "5px",
-                                }}
-                              >
-                                Perspective Font
-                              </a>
-                            </li>
-                            <li className={NavStyle.li}>
-                              <a
-                                href="/"
-                                className={NavStyle.a}
-                                style={{
-                                  color: "#fff",
-                                  // backgroundColor: "black",
-                                  borderRadius: "50px",
-                                  padding: "5px",
-                                }}
-                              >
-                                J-Bot
-                              </a>
-                            </li>
-                          </ul>
-                        </Col>
-                        <Col className={NavStyle.contentCol}>
-                          <ul className={NavStyle.ul}>
-                            <li className={NavStyle.li}>
-                              <a
-                                href="https://j-mckinney.github.io/Realistic-Water-Effect/"
-                                className={NavStyle.a}
-                                style={{
-                                  color: "#fff",
-                                  // backgroundColor: "black",
-                                  borderRadius: "50px",
-                                  padding: "5px",
-                                }}
-                              >
-                                Real Water Effect
-                              </a>
-                            </li>
-                            <li className={NavStyle.li}>
-                              <a
-                                href="/"
-                                className={NavStyle.a}
-                                style={{
-                                  color: "#fff",
-                                  // backgroundColor: "black",
-                                  borderRadius: "50px",
-                                  padding: "5px",
-                                }}
-                              >
-                                SimilTune
-                              </a>
-                            </li>
-                            <li className={NavStyle.li}>
-                              <a
-                                href="/"
-                                className={NavStyle.a}
-                                style={{
-                                  color: "#fff",
-                                  // backgroundColor: "black",
-                                  borderRadius: "50px",
-                                  padding: "5px",
-                                }}
-                              >
-                                Neumorphism
-                              </a>
-                            </li>
-                            <li className={NavStyle.li}>
-                              <a
-                                href="/"
-                                className={NavStyle.a}
-                                style={{
-                                  color: "#fff",
-                                  // backgroundColor: "black",
-                                  borderRadius: "50px",
-                                  padding: "5px",
-                                }}
-                              >
-                                Reflective 3D Ball
+                                Contact Me
                               </a>
                             </li>
                           </ul>
