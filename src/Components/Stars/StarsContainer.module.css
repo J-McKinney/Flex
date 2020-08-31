@@ -21,19 +21,26 @@ canvas {
 }
 
 .textBox {
-  font-size: 60px;
+  font-size: 50px;
   font-family: "Raleway", sans-serif;
-  letter-spacing: 7px;
-  word-spacing: 12px;
-  text-transform: uppercase;
   color: rgb(238, 238, 238);
 }
 
-.heading {
+.heading1 {
+  margin-top: 31vh;
+}
+
+.heading1,
+.heading2 {
   text-align: center;
   justify-content: center;
   display: flex;
-  flex-direction: column;
+  color: #898f9c;
+  /* flex-direction: column; */
+}
+
+.highlight {
+  color: #61dafb;
 }
 
 .mainWrapper {

@@ -76,17 +76,16 @@ class StarsContainer extends Component {
         <div className={Style.starWrapper}>
           <div className={Style.content} ref={(ref) => (this.mount = ref)}>
             <div className={Style.textBox}>
-              <div className={Style.heading}>Infinite Stars</div>
-              <br />
-              <div className={Style.heading}>Three.JS</div>
+              <div className={Style.heading1}>
+                Hello, I'm&nbsp;
+                <span className={Style.highlight}>Jesse McKinney.</span>
+              </div>
+              <div className={Style.heading2}>
+                I'm a full-stack web developer.
+              </div>
             </div>
           </div>
         </div>
-        {/* <div className={Style.mainWrapper}>
-          <div className={Style.row}>
-            <div className={Style.col}>Jesse McKinney</div>
-          </div>
-        </div> */}
       </>
     );
   }
