@@ -2,7 +2,6 @@ import React from "react";
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Main from "./Pages/Main/Main";
 // import Landing from "./Pages/Landing/Landing";
-// import Stars from "./Components/Stars/StarsContainer";
 // import Style from "./App.css";
 
 function App() {

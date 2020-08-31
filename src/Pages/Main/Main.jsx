@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import * as THREE from "three";
 import STARLITE from "../../images/star.png";
+// import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 import Style from "./Main.module.css";
 
 let scene, camera, renderer, stars, starGeo;
@@ -59,9 +62,9 @@ class Main extends Component {
       }
     });
     starGeo.verticesNeedUpdate = true;
-    stars.rotation.y += 0.004; // 0.002
+    stars.rotation.y += 0.004;
     stars.rotation.x = -1.5;
-    stars.rotation.z = -44; // -25, -38, -44
+    stars.rotation.z = -44;
     renderer.render(scene, camera);
     requestAnimationFrame(this.animate);
   };
@@ -71,6 +74,11 @@ class Main extends Component {
       <>
         <div className={Style.starWrapper}>
           <div className={Style.content} ref={(ref) => (this.mount = ref)} />
+        </div>
+        <div className={Style.mainWrapper}>
+          <div className={Style.row}>
+            <p>Hello World!!!</p>
+          </div>
         </div>
       </>
     );

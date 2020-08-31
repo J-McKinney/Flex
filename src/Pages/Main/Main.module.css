@@ -1,4 +1,52 @@
-.content {
-    position: absolute;
-    top: 100vh;
+body {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  margin: 0;
+  background: #00000000;
+  overflow: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+canvas {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.starWrapper {
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  /* flex-direction: column; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainWrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #ff0000;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  box-sizing: border-box;
+  justify-content: center;
+  /* top: 0; */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 50%;
 }
