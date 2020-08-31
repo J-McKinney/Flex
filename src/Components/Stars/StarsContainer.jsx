@@ -73,7 +73,6 @@ class StarsContainer extends Component {
           <div ref={(ref) => (this.mount = ref)}>
             <div className={Style.textBox}>
               <div className={Style.heading}>Infinite Stars</div>
-              <br />
               <div className={Style.heading}>Three.JS</div>
             </div>
           </div>

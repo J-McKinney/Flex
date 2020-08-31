@@ -1,6 +1,7 @@
 import React from "react";
-// import MyNavBar from "../../Components/MyNavBar/MyNavBar";
-// import MyFooter from "../../Components/MyFooter/MyFooter";
+import MyNavBar from "../../Components/MyNavBar/MyNavBar";
+import MyFooter from "../../Components/MyFooter/MyFooter";
+// import Stars from "../../Components/Stars/StarsContainer";
 // import Container from "react-bootstrap/Container";
 // import Row from "react-bootstrap/Row";
 // import Col from "react-bootstrap/Col";
@@ -14,7 +15,7 @@ function Landing() {
         {/* Site Wrapper */}
 
         {/* Navigation Bar */}
-        {/* <MyNavBar /> */}
+        <MyNavBar />
         {/* Navigation Bar */}
 
         {/* PERSPECTIVE FONT AREA */}
@@ -93,7 +94,7 @@ function Landing() {
         {/* Curved Div */}
 
         {/* Footer */}
-        {/* <MyFooter /> */}
+        <MyFooter />
         {/* Footer */}
       </div>
     </>

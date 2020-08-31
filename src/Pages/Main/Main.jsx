@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import * as THREE from "three";
 import STARLITE from "../../images/star.png";
+import NavBar from "../../Components/MyNavBar/MyNavBar";
 // import Container from "react-bootstrap/Container";
 // import Row from "react-bootstrap/Row";
 // import Col from "react-bootstrap/Col";
@@ -76,6 +77,7 @@ class Main extends Component {
           <div className={Style.content} ref={(ref) => (this.mount = ref)} />
         </div>
         <div className={Style.mainWrapper}>
+            <NavBar />
           <div className={Style.row}>
             <p>Hello World!!!</p>
           </div>
