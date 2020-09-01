@@ -45,6 +45,16 @@ canvas {
   color: #61dafb;
 }
 
+@media screen and (max-width: 992px) {
+  .heading1,
+  .heading2 {
+    flex: 50%;
+  }
+  .textBox {
+    font-size: 40px;
+  }
+}
+
 /* .mainWrapper {
   width: 100%;
   position: relative;
