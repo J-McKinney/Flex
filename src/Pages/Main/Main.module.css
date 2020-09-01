@@ -7,7 +7,7 @@
   flex-wrap: wrap-reverse;
   position: relative;
   top: 0;
-  margin-bottom: 43vh;
+  margin-bottom: 49vh;
 }
 
 /* Curved Div */
@@ -16,3 +16,40 @@
   position: relative;
 }
 /* Curved Div */
+
+.aboutMeWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  background-color: #282c34;
+}
+
+.aboutMeContainer,
+.aboutMeHeader {
+  position: relative;
+  z-index: 10;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.aboutMeHeader {
+  color: #ffffff;
+  padding-top: 50px;
+}
+
+.aboutMeRow {
+  padding-top: 50px;
+  position: relative;
+  z-index: 10;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+p {
+  color: #ffffff;
+}

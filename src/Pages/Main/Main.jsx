@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import NavBar from "../../Components/MyNavBar/MyNavBar";
 import Stars from "../../Components/Stars/StarsContainer";
 import Footer from "../../Components/MyFooter/MyFooter";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Style from "./Main.module.css";
 
 class Main extends Component {
@@ -13,7 +16,39 @@ class Main extends Component {
           <div className={Style.mainWrapper}>
             <Stars />
           </div>
-          <hr />
+          {/* About Me Area */}
+          <div className={Style.aboutMeWrapper}>
+            <Container className={Style.aboutMeContainer}>
+              <Row className={Style.aboutMeHeader}>
+                <h2>About</h2>
+              </Row>
+              <Row className={Style.aboutMeRow}>
+                <Col className={Style.aboutMeCol}>
+                  <p>
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum{" "}
+                  </p>
+                </Col>
+                <Col className={Style.aboutMeCol}>
+                  <p>
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum{" "}
+                  </p>
+                </Col>
+              </Row>
+            </Container>
+          </div>
+          {/* About Me Area */}
           {/* Curved Div */}
           <svg
             className={Style.svg}
