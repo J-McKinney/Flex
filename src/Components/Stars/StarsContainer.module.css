@@ -93,24 +93,3 @@ canvas {
     margin-bottom: -13vh;
   }
 }
-
-
-/* .mainWrapper {
-  width: 100%;
-  position: relative;
-  background-color: #ff0000;
-  display: flex;
-  flex-wrap: wrap;
-  overflow: auto;
-  box-sizing: border-box;
-  justify-content: center;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col {
-  flex: 50%;
-} */
