@@ -37,7 +37,9 @@ class Main extends Component {
                     <p>Lorem Ipsum </p>
                   </Fade>
                 </Col>
-                {/*  */}
+
+                {/* Center Cols */}
+
                 <Col className={Style.aboutMeCol}>
                   <Fade right duration={1000} delay={500}>
                     <p>Lorem Ipsum </p>
