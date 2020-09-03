@@ -24,9 +24,6 @@ canvas {
   font-size: 50px;
   font-family: "Raleway", sans-serif;
   color: rgb(238, 238, 238);
-}
-
-.heading1 {
   margin-top: 31vh;
 }
 
@@ -38,7 +35,7 @@ canvas {
   color: #898f9c;
   position: relative;
   z-index: 10;
-  /* flex-direction: column; */
+  flex-direction: row;
 }
 
 .highlight {
@@ -49,11 +46,54 @@ canvas {
   .heading1,
   .heading2 {
     flex: 50%;
+    /* flex-direction: column; */
   }
+
   .textBox {
     font-size: 40px;
+    /* margin-bottom: -18vh; */
   }
 }
+
+@media screen and (max-width: 554px) {
+  .heading1,
+  .heading2 {
+    flex: 50%;
+    flex-direction: column;
+  }
+
+  .textBox {
+    font-size: 40px;
+    margin-bottom: -4vh;
+  }
+}
+
+@media screen and (max-width: 552px) {
+  .heading1,
+  .heading2 {
+    flex: 50%;
+    flex-direction: column;
+  }
+
+  .textBox {
+    font-size: 40px;
+    margin-bottom: -12vh;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .heading1,
+  .heading2 {
+    flex: 50%;
+    flex-direction: column;
+  }
+
+  .textBox {
+    font-size: 40px;
+    margin-bottom: -13vh;
+  }
+}
+
 
 /* .mainWrapper {
   width: 100%;

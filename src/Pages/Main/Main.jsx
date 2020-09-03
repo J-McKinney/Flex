@@ -29,25 +29,40 @@ class Main extends Component {
               <Row className={Style.aboutMeRow}>
                 <Col className={Style.aboutMeCol}>
                   <Fade left big duration={1000} delay={500}>
-                    <p>Lorem Ipsum </p>
+                    <i id={Style.aboutMeIcon} className="fas fa-meteor"></i>
+                    <h3 className={Style.aboutMeh3}>Fast/Clean Code</h3>
+                    <p className={Style.aboutMePTags}>
+                      Fast load times and lag free interaction, my highest
+                      priority.
+                    </p>
                   </Fade>
                 </Col>
                 <Col className={Style.aboutMeCol}>
                   <Fade left duration={1000} delay={500}>
-                    <p>Lorem Ipsum </p>
+                    <i id={Style.aboutMeIcon} className="fas fa-mobile-alt" />
+                    <h3 className={Style.aboutMeh3}>Responsive</h3>
+                    <p className={Style.aboutMePTags}>
+                      My layouts will work on any device, big or small.
+                    </p>
                   </Fade>
                 </Col>
-
-                {/* Center Cols */}
-
                 <Col className={Style.aboutMeCol}>
                   <Fade right duration={1000} delay={500}>
-                    <p>Lorem Ipsum </p>
+                    <i id={Style.aboutMeIcon} className="fas fa-code" />
+                    <h3 className={Style.aboutMeh3}>Intuitive</h3>
+                    <p className={Style.aboutMePTags}>
+                      Strong preference for easy to use, intuitive UX/UI.
+                    </p>
                   </Fade>
                 </Col>
                 <Col className={Style.aboutMeCol}>
                   <Fade right big duration={1000} delay={500}>
-                    <p>Lorem Ipsum </p>
+                    <i id={Style.aboutMeIcon} className="fas fa-fighter-jet" />
+                    <h3 className={Style.aboutMeh3}>Dynamic</h3>
+                    <p className={Style.aboutMePTags}>
+                      Websites don't have to be static, I love making pages come
+                      to life.
+                    </p>
                   </Fade>
                 </Col>
               </Row>

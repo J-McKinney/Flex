@@ -53,8 +53,31 @@
   justify-content: center;
   align-content: center;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
-p {
+#aboutMeIcon {
   color: #ffffff;
+  font-size: 40px;
+}
+
+.aboutMeh3 {
+  color: #61dafb;
+  flex: 50%;
+}
+
+.aboutMePTags {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 730px) {
+  .aboutMeRow {
+    flex-direction: column;
+  }
+
+  .aboutMePTags {
+    margin-bottom: 50px;
+  }
 }
