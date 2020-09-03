@@ -41,6 +41,11 @@
   padding-top: 50px;
 }
 
+.hr1Main {
+  border: 1px solid #ffffff;
+  width: 10%;
+}
+
 .aboutMeRow {
   padding-top: 50px;
   position: relative;

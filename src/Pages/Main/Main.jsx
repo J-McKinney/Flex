@@ -5,6 +5,7 @@ import Footer from "../../Components/MyFooter/MyFooter";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Fade from "react-reveal/Fade";
 import Style from "./Main.module.css";
 
 class Main extends Component {
@@ -20,30 +21,32 @@ class Main extends Component {
           <div className={Style.aboutMeWrapper}>
             <Container className={Style.aboutMeContainer}>
               <Row className={Style.aboutMeHeader}>
-                <h2>About</h2>
+                <Fade down duration={1000} delay={500}>
+                  <h2 className={Style.aboutHeader}>About</h2>
+                </Fade>
               </Row>
+              <hr className={Style.hr1Main} />
               <Row className={Style.aboutMeRow}>
                 <Col className={Style.aboutMeCol}>
-                  <p>
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum{" "}
-                  </p>
+                  <Fade left big duration={1000} delay={500}>
+                    <p>Lorem Ipsum </p>
+                  </Fade>
                 </Col>
                 <Col className={Style.aboutMeCol}>
-                  <p>
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum{" "}
-                  </p>
+                  <Fade left duration={1000} delay={500}>
+                    <p>Lorem Ipsum </p>
+                  </Fade>
+                </Col>
+                {/*  */}
+                <Col className={Style.aboutMeCol}>
+                  <Fade right duration={1000} delay={500}>
+                    <p>Lorem Ipsum </p>
+                  </Fade>
+                </Col>
+                <Col className={Style.aboutMeCol}>
+                  <Fade right big duration={1000} delay={500}>
+                    <p>Lorem Ipsum </p>
+                  </Fade>
                 </Col>
               </Row>
             </Container>
