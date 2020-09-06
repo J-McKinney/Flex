@@ -29,7 +29,10 @@ class Main extends Component {
               <Row className={Style.aboutMeRow}>
                 <Col className={Style.aboutMeCol}>
                   <Fade left big duration={1000} delay={500}>
-                    <i id={Style.aboutMeIcon} className="fas fa-meteor"></i>
+                    <i
+                      id={Style.aboutMeIcon}
+                      className="fas fa-fighter-jet"
+                    ></i>
                     <h3 className={Style.aboutMeh3}>Fast/Clean Code</h3>
                     <p className={Style.aboutMePTags}>
                       Fast load times and lag free interaction, my highest
@@ -57,7 +60,7 @@ class Main extends Component {
                 </Col>
                 <Col className={Style.aboutMeCol}>
                   <Fade right big duration={1000} delay={500}>
-                    <i id={Style.aboutMeIcon} className="fas fa-fighter-jet" />
+                    <i id={Style.aboutMeIcon} className="fas fa-meteor" />
                     <h3 className={Style.aboutMeh3}>Dynamic</h3>
                     <p className={Style.aboutMePTags}>
                       Websites don't have to be static, I love making pages come

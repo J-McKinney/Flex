@@ -7,7 +7,7 @@
   flex-wrap: wrap-reverse;
   position: relative;
   top: 0;
-  margin-bottom: 46vh;
+  margin-bottom: -0.1vh;
 }
 
 /* Curved Div */
@@ -72,12 +72,6 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 992px) {
-  .mainWrapper {
-    margin-bottom: 50.5vh;
-  }
-}
-
 @media screen and (max-width: 770px) {
   .aboutMeRow {
     flex-direction: column;
@@ -85,17 +79,5 @@
 
   .aboutMePTags {
     margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 556px) {
-  .mainWrapper {
-    margin-bottom: 50.6vh;
-  }
-}
-
-@media screen and (max-width: 317px) {
-  .mainWrapper {
-    margin-bottom: 45.5vh;
   }
 }
