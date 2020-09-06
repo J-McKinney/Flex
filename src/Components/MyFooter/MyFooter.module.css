@@ -21,6 +21,11 @@
   color: #555555;
 }
 
+.hr {
+  border: 1px solid #555555;
+  width: 15%;
+}
+
 .Col {
   text-align: center;
   justify-content: center;
@@ -59,7 +64,5 @@ a {
   font-family: "Yellowtail", cursive;
   text-align: center;
   justify-content: center;
-  /* position: absolute; */
-  /* bottom: 0; */
-  /* right: 0; */
+  margin-bottom: 3vh;
 }

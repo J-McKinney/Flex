@@ -29,10 +29,7 @@ class Main extends Component {
               <Row className={Style.aboutMeRow}>
                 <Col className={Style.aboutMeCol}>
                   <Fade left big duration={1000} delay={500}>
-                    <i
-                      id={Style.aboutMeIcon}
-                      className="fas fa-fighter-jet"
-                    ></i>
+                    <i id={Style.aboutMeIcon} className="fas fa-fighter-jet" />
                     <h3 className={Style.aboutMeh3}>Fast/Clean Code</h3>
                     <p className={Style.aboutMePTags}>
                       Fast load times and lag free interaction, my highest

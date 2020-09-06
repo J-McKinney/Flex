@@ -25,7 +25,6 @@ canvas {
   font-size: 50px;
   font-family: "Raleway", sans-serif;
   color: rgb(238, 238, 238);
-  /* margin-top: 31vh; */
 }
 
 .heading1,
@@ -47,12 +46,10 @@ canvas {
   .heading1,
   .heading2 {
     flex: 50%;
-    /* flex-direction: column; */
   }
 
   .textBox {
     font-size: 40px;
-    /* margin-bottom: -18vh; */
   }
 }
 
@@ -65,7 +62,6 @@ canvas {
 
   .textBox {
     font-size: 40px;
-    margin-bottom: -4vh;
   }
 }
 
@@ -77,8 +73,7 @@ canvas {
   }
 
   .textBox {
-    font-size: 40px;
-    margin-bottom: -12vh;
+    font-size: 37.5px;
   }
 }
 
@@ -90,7 +85,6 @@ canvas {
   }
 
   .textBox {
-    font-size: 40px;
-    margin-bottom: -13vh;
+    font-size: 35px;
   }
 }
