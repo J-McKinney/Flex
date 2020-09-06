@@ -3,6 +3,8 @@ body {
   background: #00000000;
   overflow: auto;
   overflow-x: hidden;
+  /* width: 101.3%; */
+  /* height: auto; */
 }
 
 canvas {

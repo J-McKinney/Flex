@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import * as THREE from "three";
 import STARLITE from "../../images/star.png";
-// import NavBar from "../../Components/MyNavBar/MyNavBar";
-// import Container from "react-bootstrap/Container";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
 import Style from "./StarsContainer.module.css";
 
 let scene, camera, renderer, stars, starGeo;
