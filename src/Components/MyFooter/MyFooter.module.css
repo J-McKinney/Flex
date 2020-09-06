@@ -55,7 +55,11 @@ a {
   margin-bottom: 3vh;
 }
 
-#envelope,
+#envelope {
+  color: #6192fb;
+  font-size: 12.5vh;
+}
+
 #linkedin {
   color: #0077b5;
 }
@@ -75,19 +79,19 @@ a {
 }
 
 @media screen and (max-width: 420px) {
-  .hr{
+  .hr {
     width: 38%;
   }
 }
 
 @media screen and (max-width: 360px) {
-  .hr{
+  .hr {
     width: 45%;
   }
 }
 
 @media screen and (max-width: 300px) {
-  #envelope,
+  /* #envelope, */
   #linkedin,
   #github,
   #pinterest,
