@@ -74,6 +74,18 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+@media screen and (max-width: 420px) {
+  .hr{
+    width: 38%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hr{
+    width: 45%;
+  }
+}
+
 @media screen and (max-width: 300px) {
   #envelope,
   #linkedin,
@@ -82,7 +94,7 @@ a {
   #instagram {
     font-size: XX-large;
   }
-  
+
   .hr {
     width: 60%;
   }

@@ -25,6 +25,7 @@
   width: 100%;
   height: auto;
   background-color: #282c34;
+  margin-bottom: -0.3vh;
 }
 
 .aboutMeContainer,
@@ -79,5 +80,23 @@
 
   .aboutMePTags {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hr1Main {
+    width: 27.5%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hr1Main {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .hr1Main {
+    width: 37.5%;
   }
 }

@@ -11,7 +11,7 @@ class MyFooter extends Component {
         <Container className={FooterStyle.slider} id="contact-section">
           <Row className={FooterStyle.footerName}>
             <Col>
-              <h3 className={FooterStyle.h3}>Contact Me:</h3>
+              <h3 className={FooterStyle.h3}>Contact Me</h3>
             </Col>
           </Row>
           <hr className={FooterStyle.hr} />
