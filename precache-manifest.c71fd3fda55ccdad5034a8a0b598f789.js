@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "12dc063489b5ba403053f23b93629233",
+    "revision": "53c8098f622eb0a69296ef10d21b8585",
     "url": "/Flex/index.html"
   },
   {
-    "revision": "a6edcaf0a45fd83b7dc8",
-    "url": "/Flex/static/css/main.5acdd909.chunk.css"
+    "revision": "b7c3c377bbb39034403d",
+    "url": "/Flex/static/css/main.24f274e7.chunk.css"
   },
   {
     "revision": "8866f12982bb9140b14a",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Flex/static/js/2.a0e67ede.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a6edcaf0a45fd83b7dc8",
+    "revision": "b7c3c377bbb39034403d",
     "url": "/Flex/static/js/main.7ee57273.chunk.js"
   },
   {

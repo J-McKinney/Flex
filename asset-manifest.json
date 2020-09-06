@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Flex/static/css/main.5acdd909.chunk.css",
+    "main.css": "/Flex/static/css/main.24f274e7.chunk.css",
     "main.js": "/Flex/static/js/main.7ee57273.chunk.js",
     "main.js.map": "/Flex/static/js/main.7ee57273.chunk.js.map",
     "runtime-main.js": "/Flex/static/js/runtime-main.9b246ec9.js",
@@ -8,15 +8,15 @@
     "static/js/2.a0e67ede.chunk.js": "/Flex/static/js/2.a0e67ede.chunk.js",
     "static/js/2.a0e67ede.chunk.js.map": "/Flex/static/js/2.a0e67ede.chunk.js.map",
     "index.html": "/Flex/index.html",
-    "precache-manifest.8fa33d444c900f6197d3ae37f4f3fb4d.js": "/Flex/precache-manifest.8fa33d444c900f6197d3ae37f4f3fb4d.js",
+    "precache-manifest.c71fd3fda55ccdad5034a8a0b598f789.js": "/Flex/precache-manifest.c71fd3fda55ccdad5034a8a0b598f789.js",
     "service-worker.js": "/Flex/service-worker.js",
-    "static/css/main.5acdd909.chunk.css.map": "/Flex/static/css/main.5acdd909.chunk.css.map",
+    "static/css/main.24f274e7.chunk.css.map": "/Flex/static/css/main.24f274e7.chunk.css.map",
     "static/js/2.a0e67ede.chunk.js.LICENSE.txt": "/Flex/static/js/2.a0e67ede.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9b246ec9.js",
     "static/js/2.a0e67ede.chunk.js",
-    "static/css/main.5acdd909.chunk.css",
+    "static/css/main.24f274e7.chunk.css",
     "static/js/main.7ee57273.chunk.js"
   ]
 }
