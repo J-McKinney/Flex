@@ -31,33 +31,21 @@
   justify-content: center;
 }
 
-ul {
-  list-style: none;
-  text-align: center;
-  justify-content: center;
-}
-
-li {
-  margin: 0 35px 0 0;
-  padding-top: 10px;
-  text-align: center;
-  justify-content: center;
-}
-
-h5 {
-  font-weight: bold;
-  font-style: italic;
-  color: #282c34;
-  text-align: center;
-  justify-content: center;
-}
-
 a {
   z-index: 1001;
   color: #282c34;
   position: relative;
   text-align: center;
   justify-content: center;
+  font-size: 7.5vh;
+  flex-direction: column;
+}
+
+.iconRow {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .bottomName {
@@ -65,4 +53,37 @@ a {
   text-align: center;
   justify-content: center;
   margin-bottom: 3vh;
+}
+
+#envelope,
+#linkedin {
+  color: #0077b5;
+}
+
+#github {
+  color: #24292e;
+}
+
+#pinterest {
+  color: #e60023;
+}
+
+#instagram{
+  background: linear-gradient(45deg,#fadb04, #f90901, #662c8f);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 300px) {
+  #envelope,
+  #linkedin,
+  #github,
+  #pinterest,
+  #instagram {
+    font-size: XX-large;
+  }
+  
+  .hr {
+    width: 60%;
+  }
 }
