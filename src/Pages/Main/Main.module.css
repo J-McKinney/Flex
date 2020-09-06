@@ -72,12 +72,30 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 992px) {
+  .mainWrapper {
+    margin-bottom: 50.5vh;
+  }
+}
+
+@media screen and (max-width: 770px) {
   .aboutMeRow {
     flex-direction: column;
   }
 
   .aboutMePTags {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 556px) {
+  .mainWrapper {
+    margin-bottom: 50.6vh;
+  }
+}
+
+@media screen and (max-width: 317px) {
+  .mainWrapper {
+    margin-bottom: 45.5vh;
   }
 }
