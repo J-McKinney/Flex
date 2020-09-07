@@ -13,7 +13,7 @@
   width: 100%;
 }
 
-a {
+.a {
   font-weight: 700;
 }
 
@@ -101,7 +101,7 @@ h3,
   color: #61dafb;
   font-family: Arial;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -2px;
   text-transform: uppercase;
   text-align: center;
@@ -118,8 +118,9 @@ h3,
   flex: 50%;
   margin: 0;
   height: 50px;
-  line-height: 50px;
+  line-height: 42.5px;
   transition: all 0.65s ease-in-out;
+  font-weight: 700;
 }
 
 .perspectiveLine:nth-child(odd) {
