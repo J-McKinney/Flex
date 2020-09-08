@@ -43,6 +43,9 @@ class BarCharts extends Component {
         legend: {
           display: false,
         },
+        title: {
+          display: false,
+        },
       },
     };
     return (
@@ -56,9 +59,9 @@ class BarCharts extends Component {
                 </Fade>
               </Col>
               <Col className={Style.barChartCol}>
-                <Fade right duration={1000} delay={500}>
-                  <HorizontalBar className={Style.barChart} data={data} />
-                </Fade>
+                {/* <Fade right duration={1000} delay={500}> */}
+                <HorizontalBar className={Style.barChart} data={data} />
+                {/* </Fade> */}
               </Col>
             </Row>
           </Container>
