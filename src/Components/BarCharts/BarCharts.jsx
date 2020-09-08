@@ -21,12 +21,12 @@ const chart = {
   ],
   datasets: [
     {
-      label: "My First dataset",
-      backgroundColor: "rgba(255,99,132,0.2)",
-      borderColor: "rgba(255,99,132,1)",
+      label: "My Favorite Languages To Code In",
+      backgroundColor: "#61dafb",
+      borderColor: "#61dafb",
       borderWidth: 1,
-      hoverBackgroundColor: "rgba(255,99,132,0.4)",
-      hoverBorderColor: "rgba(255,99,132,1)",
+      hoverBackgroundColor: "#61dafb",
+      hoverBorderColor: "#61dafb",
       data: [65, 59, 80, 91, 56, 55, 40, 62, 22],
     },
   ],
@@ -58,6 +58,7 @@ class BarCharts extends Component {
                     data={chart}
                     height={500}
                     options={{
+                      events: ["null"],
                       maintainAspectRatio: false,
                       title: {
                         display: false,
@@ -67,19 +68,16 @@ class BarCharts extends Component {
                       },
                       tooltips: {
                         enabled: false,
-                        intersect: 0,
                       },
                       scales: {
                         yAxes: [
                           {
                             ticks: {
+                              fontSize: 22,
                               beginAtZero: true,
                             },
                             gridLines: {
-                              zeroLineColor: "transparent",
-                              drawTicks: false,
                               display: false,
-                              drawBorder: false,
                             },
                           },
                         ],

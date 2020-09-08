@@ -2,23 +2,39 @@
   background-color: #ffffff;
   overflow-x: hidden;
   z-index: 10;
+  box-shadow: 7px 7px 7px 7px rgb(0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
+  margin-top: 5%;
+  margin-bottom: 5%;
   background-color: #ffffff;
 }
 
 .row {
+  margin: 5%;
   background-color: #ffffff;
+  text-align: center;
+  align-items: center;
+  /* box-shadow: 7px 7px 7px 7px rgb(0, 0, 0); */
 }
 
 .MyPicCol {
   background-color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  flex: content;
 }
 
 .MyPic {
-  width: 310px;
-  height: 310px;
+  width: 400px;
+  height: 400px;
   border-radius: 50px;
 }
 
