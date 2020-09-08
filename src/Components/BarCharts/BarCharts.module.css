@@ -1,41 +1,32 @@
 .wrapper {
-  width: 100%;
-  height: auto;
   background-color: #ffffff;
   overflow-x: hidden;
+  z-index: 10;
 }
 
 .container {
-  width: 100%;
-  height: auto;
   background-color: #ffffff;
 }
 
 .row {
-  width: 100%;
-  height: auto;
   background-color: #ffffff;
 }
 
 .MyPicCol {
-  width: 100%;
-  height: auto;
   background-color: #ffffff;
 }
 
 .MyPic {
   width: 310px;
-  height: auto;
+  height: 310px;
   border-radius: 50px;
 }
 
 .barChartCol {
-  width: 100%;
-  height: auto;
   background-color: #ffffff;
 }
 
 .barChart {
-  width: auto;
+  width: 310px;
   height: 310px;
 }

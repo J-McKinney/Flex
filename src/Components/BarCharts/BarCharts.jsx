@@ -7,6 +7,31 @@ import Fade from "react-reveal/Fade";
 import Me from "../../images/Me.JPG";
 import Style from "./BarCharts.module.css";
 
+const chart = {
+  labels: [
+    "HTML",
+    "CSS",
+    "BootStrap",
+    "JavaScript",
+    "React",
+    "Angular",
+    "Node.js",
+    "Mongoose",
+    "MySQL",
+  ],
+  datasets: [
+    {
+      label: "My First dataset",
+      backgroundColor: "rgba(255,99,132,0.2)",
+      borderColor: "rgba(255,99,132,1)",
+      borderWidth: 1,
+      hoverBackgroundColor: "rgba(255,99,132,0.4)",
+      hoverBorderColor: "rgba(255,99,132,1)",
+      data: [65, 59, 80, 91, 56, 55, 40, 62, 22],
+    },
+  ],
+};
+
 class BarCharts extends Component {
   componentDidMount() {
     console.log("componentDidMount: ");
@@ -16,38 +41,6 @@ class BarCharts extends Component {
   }
 
   render() {
-    const data = {
-      labels: [
-        "HTML",
-        "CSS",
-        "BootStrap",
-        "JavaScript",
-        "React",
-        "Angular",
-        "Node.js",
-        "Mongoose",
-        "MySQL",
-      ],
-      datasets: [
-        {
-          label: "My First dataset",
-          backgroundColor: "rgba(255,99,132,0.2)",
-          borderColor: "rgba(255,99,132,1)",
-          borderWidth: 1,
-          hoverBackgroundColor: "rgba(255,99,132,0.4)",
-          hoverBorderColor: "rgba(255,99,132,1)",
-          data: [65, 59, 80, 91, 56, 55, 40, 62, 22],
-        },
-      ],
-      options: {
-        legend: {
-          display: false,
-        },
-        title: {
-          display: false,
-        },
-      },
-    };
     return (
       <>
         <div className={Style.wrapper}>
@@ -59,9 +52,25 @@ class BarCharts extends Component {
                 </Fade>
               </Col>
               <Col className={Style.barChartCol}>
-                {/* <Fade right duration={1000} delay={500}> */}
-                <HorizontalBar className={Style.barChart} data={data} />
-                {/* </Fade> */}
+                <Fade right duration={1000} delay={500}>
+                  <HorizontalBar
+                    className={Style.barChart}
+                    data={chart}
+                    height={500}
+                    options={{
+                      maintainAspectRatio: false,
+                      title: {
+                        display: false,
+                      },
+                      legend: {
+                        display: false,
+                      },
+                      tooltips: {
+                        enabled: false,
+                      },
+                    }}
+                  />
+                </Fade>
               </Col>
             </Row>
           </Container>
