@@ -27,7 +27,13 @@ const chart = {
       borderWidth: 1,
       hoverBackgroundColor: "#61dafb",
       hoverBorderColor: "#61dafb",
-      data: [65, 59, 80, 91, 56, 55, 40, 62, 22],
+      // The 2 Sets Of Data Numbers Need To Add Up To 100
+      data: [65, 59, 80, 100, 56, 55, 40, 62, 22],
+    },
+    {
+      backgroundColor: "#555555",
+      // The 2 Sets Of Data Numbers Need To Add Up To 100
+      data: [35, 41, 20, 0, 44, 45, 60, 38, 78],
     },
   ],
 };
@@ -58,6 +64,7 @@ class BarCharts extends Component {
                     data={chart}
                     height={500}
                     options={{
+                      responsive: true,
                       events: ["null"],
                       maintainAspectRatio: false,
                       title: {
@@ -72,7 +79,10 @@ class BarCharts extends Component {
                       scales: {
                         yAxes: [
                           {
+                            stacked: true,
                             ticks: {
+                              suggestedMin: 0,
+                              suggestedMax: 100,
                               fontSize: 22,
                               beginAtZero: true,
                             },
@@ -83,6 +93,13 @@ class BarCharts extends Component {
                         ],
                         xAxes: [
                           {
+                            stacked: true,
+                            ticks: {
+                              suggestedMin: 0,
+                              suggestedMax: 100,
+                              fontSize: 22,
+                              beginAtZero: true,
+                            },
                             display: 0,
                           },
                         ],
