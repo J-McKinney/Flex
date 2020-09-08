@@ -1,5 +1,41 @@
 .wrapper {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: auto;
   background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.row {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.MyPicCol {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.MyPic {
+  width: 310px;
+  height: auto;
+  border-radius: 50px;
+}
+
+.barChartCol {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.barChart {
+  width: auto;
+  height: 310px;
 }

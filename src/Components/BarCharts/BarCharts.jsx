@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { HorizontalBar } from "react-chartjs-2";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Fade from "react-reveal/Fade";
+import Me from "../../images/Me.JPG";
 import Style from "./BarCharts.module.css";
 
 class BarCharts extends Component {
@@ -35,13 +39,29 @@ class BarCharts extends Component {
           data: [65, 59, 80, 91, 56, 55, 40, 62, 22],
         },
       ],
+      options: {
+        legend: {
+          display: false,
+        },
+      },
     };
     return (
       <>
         <div className={Style.wrapper}>
-          <Fade right duration={1000} delay={500}>
-            <HorizontalBar data={data} />
-          </Fade>
+          <Container className={Style.container}>
+            <Row className={Style.row}>
+              <Col className={Style.MyPicCol}>
+                <Fade left duration={1000} delay={500}>
+                  <img className={Style.MyPic} src={Me} alt="Me" />
+                </Fade>
+              </Col>
+              <Col className={Style.barChartCol}>
+                <Fade right duration={1000} delay={500}>
+                  <HorizontalBar className={Style.barChart} data={data} />
+                </Fade>
+              </Col>
+            </Row>
+          </Container>
         </div>
       </>
     );
