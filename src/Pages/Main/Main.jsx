@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavBar from "../../Components/MyNavBar/MyNavBar";
 import Stars from "../../Components/Stars/StarsContainer";
 import Footer from "../../Components/MyFooter/MyFooter";
+import BarChart from "../../Components/BarCharts/BarCharts";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -67,6 +68,7 @@ class Main extends Component {
                 </Col>
               </Row>
             </Container>
+            <BarChart />
           </div>
           {/* About Me Area */}
           {/* Curved Div */}
