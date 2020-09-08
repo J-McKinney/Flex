@@ -9,15 +9,15 @@ import Style from "./BarCharts.module.css";
 
 const chart = {
   labels: [
-    "HTML",
-    "CSS",
-    "BootStrap",
-    "JavaScript",
-    "React",
-    "Angular",
-    "Node.js",
-    "Mongoose",
-    "MySQL",
+    "HTML    ",
+    "CSS    ",
+    "BootStrap    ",
+    "JavaScript    ",
+    "React    ",
+    "Angular    ",
+    "Node.js    ",
+    "Mongoose    ",
+    "MySQL    ",
   ],
   datasets: [
     {
@@ -67,6 +67,27 @@ class BarCharts extends Component {
                       },
                       tooltips: {
                         enabled: false,
+                        intersect: 0,
+                      },
+                      scales: {
+                        yAxes: [
+                          {
+                            ticks: {
+                              beginAtZero: true,
+                            },
+                            gridLines: {
+                              zeroLineColor: "transparent",
+                              drawTicks: false,
+                              display: false,
+                              drawBorder: false,
+                            },
+                          },
+                        ],
+                        xAxes: [
+                          {
+                            display: 0,
+                          },
+                        ],
                       },
                     }}
                   />
