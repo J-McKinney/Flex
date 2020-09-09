@@ -3,7 +3,6 @@ import Me from "../../images/Me.JPG";
 import NavBar from "../../Components/MyNavBar/MyNavBar";
 import Stars from "../../Components/Stars/StarsContainer";
 import Footer from "../../Components/MyFooter/MyFooter";
-import { Fade } from "react-awesome-reveal";
 import { HorizontalBar } from "react-chartjs-2";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -55,118 +54,111 @@ class Main extends Component {
           <div className={Style.aboutMeWrapper}>
             <Container className={Style.aboutMeContainer}>
               <Row className={Style.aboutMeHeader}>
-                <Fade triggerOnce={true} direction={"down"} delay={500}>
-                  <h2 className={Style.aboutHeader}>About</h2>
-                </Fade>
+                <h2 className={Style.aboutHeader}>About</h2>
               </Row>
               <hr className={Style.hr1Main} />
-              <Fade triggerOnce={true} direction={"down"} delay={500}>
-                <Row className={Style.aboutMeRow}>
-                  <Col className={Style.aboutMeCol}>
-                    <i id={Style.aboutMeIcon} className="fas fa-fighter-jet" />
-                    <h3 className={Style.aboutMeh3}>Fast/Clean Code</h3>
-                    <p className={Style.aboutMePTags}>
-                      Fast load times and lag free interaction, my highest
-                      priority.
-                    </p>
-                  </Col>
-                  <Col className={Style.aboutMeCol}>
-                    <i id={Style.aboutMeIcon} className="fas fa-mobile-alt" />
-                    <h3 className={Style.aboutMeh3}>Responsive</h3>
-                    <p className={Style.aboutMePTags}>
-                      My layouts will work on any device, big or small.
-                    </p>
-                  </Col>
-                  <Col className={Style.aboutMeCol}>
-                    <i id={Style.aboutMeIcon} className="fas fa-code" />
-                    <h3 className={Style.aboutMeh3}>Intuitive</h3>
-                    <p className={Style.aboutMePTags}>
-                      Strong preference for easy to use, intuitive UX/UI.
-                    </p>
-                  </Col>
-                  <Col className={Style.aboutMeCol}>
-                    <i id={Style.aboutMeIcon} className="fas fa-meteor" />
-                    <h3 className={Style.aboutMeh3}>Dynamic</h3>
-                    <p className={Style.aboutMePTags}>
-                      Websites don't have to be static, I love making pages come
-                      to life.
-                    </p>
-                  </Col>
-                </Row>
-              </Fade>
+              <Row className={Style.aboutMeRow}>
+                <Col className={Style.aboutMeCol}>
+                  <i id={Style.aboutMeIcon} className="fas fa-fighter-jet" />
+                  <h3 className={Style.aboutMeh3}>Fast/Clean Code</h3>
+                  <p className={Style.aboutMePTags}>
+                    Fast load times and lag free interaction, my highest
+                    priority.
+                  </p>
+                </Col>
+                <Col className={Style.aboutMeCol}>
+                  <i id={Style.aboutMeIcon} className="fas fa-mobile-alt" />
+                  <h3 className={Style.aboutMeh3}>Responsive</h3>
+                  <p className={Style.aboutMePTags}>
+                    My layouts will work on any device, big or small.
+                  </p>
+                </Col>
+                <Col className={Style.aboutMeCol}>
+                  <i id={Style.aboutMeIcon} className="fas fa-code" />
+                  <h3 className={Style.aboutMeh3}>Intuitive</h3>
+                  <p className={Style.aboutMePTags}>
+                    Strong preference for easy to use, intuitive UX/UI.
+                  </p>
+                </Col>
+                <Col className={Style.aboutMeCol}>
+                  <i id={Style.aboutMeIcon} className="fas fa-meteor" />
+                  <h3 className={Style.aboutMeh3}>Dynamic</h3>
+                  <p className={Style.aboutMePTags}>
+                    Websites don't have to be static, I love making pages come
+                    to life.
+                  </p>
+                </Col>
+              </Row>
               {/* Bar Chart Container */}
-              <Fade triggerOnce={true} direction={"up"} delay={500}>
-                <div className={Style.barChartContainer}>
-                  <Row className={Style.barChartRow}>
-                    <div className="col-md-6" id={Style.MyPicCol}>
-                      <img className={Style.barChartMyPic} src={Me} alt="Me" />
-                      <h3 className={Style.talkingAboutMeH3}>
-                        Talking about me?
-                      </h3>
-                      <hr className={Style.hr1Me} />
-                      <p className={Style.talkingAboutMe}>
-                        I'm a Free-Lance Full Stack Flex Web Developer in
-                        Atlanta, GA. I have serious passion for UI effects,
-                        animations and creating intuitive, dynamic user
-                        experiences.{" "}
-                      </p>
-                    </div>
-                    <div className="col-md-6" id={Style.barChartCol}>
-                      <HorizontalBar
-                        className={Style.barChart}
-                        data={chart}
-                        height={400}
-                        width={400}
-                        options={{
-                          animation: {
-                            duration: 0,
-                          },
-                          events: ["null"],
-                          responsive: true,
-                          maintainAspectRatio: true,
-                          title: {
-                            display: false,
-                          },
-                          legend: {
-                            display: false,
-                          },
-                          tooltips: {
-                            enabled: false,
-                          },
-                          scales: {
-                            yAxes: [
-                              {
-                                stacked: true,
-                                ticks: {
-                                  suggestedMin: 0,
-                                  suggestedMax: 100,
-                                  fontSize: 17,
-                                  fontColor: "white",
-                                  beginAtZero: true,
-                                },
-                                gridLines: {
-                                  display: false,
-                                },
+              <div className={Style.barChartContainer}>
+                <Row className={Style.barChartRow}>
+                  <div className="col-md-6" id={Style.MyPicCol}>
+                    <img className={Style.barChartMyPic} src={Me} alt="Me" />
+                    <h3 className={Style.talkingAboutMeH3}>
+                      Talking about me?
+                    </h3>
+                    <hr className={Style.hr1Me} />
+                    <p className={Style.talkingAboutMe}>
+                      I'm a Free-Lance Full Stack Flex Web Developer in Atlanta,
+                      GA. I have serious passion for UI effects, animations and
+                      creating intuitive, dynamic user experiences.{" "}
+                    </p>
+                  </div>
+                  <div className="col-md-6" id={Style.barChartCol}>
+                    <HorizontalBar
+                      className={Style.barChart}
+                      data={chart}
+                      height={400}
+                      width={400}
+                      options={{
+                        animation: {
+                          duration: 0,
+                        },
+                        events: ["null"],
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        title: {
+                          display: false,
+                        },
+                        legend: {
+                          display: false,
+                        },
+                        tooltips: {
+                          enabled: false,
+                        },
+                        scales: {
+                          yAxes: [
+                            {
+                              stacked: true,
+                              ticks: {
+                                suggestedMin: 0,
+                                suggestedMax: 100,
+                                fontSize: 17,
+                                fontColor: "white",
+                                beginAtZero: true,
                               },
-                            ],
-                            xAxes: [
-                              {
-                                stacked: true,
-                                ticks: {
-                                  suggestedMin: 0,
-                                  suggestedMax: 100,
-                                  beginAtZero: true,
-                                },
-                                display: 0,
+                              gridLines: {
+                                display: false,
                               },
-                            ],
-                          },
-                        }}
-                      />
-                    </div>
-                  </Row>
-                </div>
-              </Fade>
+                            },
+                          ],
+                          xAxes: [
+                            {
+                              stacked: true,
+                              ticks: {
+                                suggestedMin: 0,
+                                suggestedMax: 100,
+                                beginAtZero: true,
+                              },
+                              display: 0,
+                            },
+                          ],
+                        },
+                      }}
+                    />
+                  </div>
+                </Row>
+              </div>
               {/* Bar Chart Container */}
             </Container>
           </div>

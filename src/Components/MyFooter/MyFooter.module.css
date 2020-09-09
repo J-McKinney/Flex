@@ -62,20 +62,33 @@
 
 #linkedin {
   color: #0077b5;
+  font-size: 12vh;
 }
 
 #github {
   color: #24292e;
+  font-size: 12vh;
 }
 
 #pinterest {
   color: #e60023;
+  font-size: 12vh;
 }
 
-#instagram{
-  background: linear-gradient(45deg,#fadb04, #f90901, #662c8f);
+#instagram {
+  background: linear-gradient(45deg, #fadb04, #f90901, #662c8f);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 12vh;
+}
+
+@media screen and (max-width: 767px) {
+  #linkedin,
+  #github,
+  #pinterest,
+  #instagram {
+    font-size: 6vh;
+  }
 }
 
 @media screen and (max-width: 420px) {
