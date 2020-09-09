@@ -149,7 +149,7 @@ class MyNavBar extends Component {
                                 <p className={NavStyle.options}></p>
                                 <p className={NavStyle.options}>
                                   <a
-                                    href="#top-of-page"
+                                    href="#about-info"
                                     className={NavStyle.a}
                                     style={{ color: "#61dafb" }}
                                   >
@@ -168,7 +168,7 @@ class MyNavBar extends Component {
                                 <p className={NavStyle.options}></p>
                                 <p className={NavStyle.options}>
                                   <a
-                                    href="#top-of-page"
+                                    href="#portfolio-info"
                                     className={NavStyle.a}
                                     style={{ color: "#61dafb" }}
                                   >
@@ -187,7 +187,7 @@ class MyNavBar extends Component {
                                 <p className={NavStyle.options}></p>
                                 <p className={NavStyle.options}>
                                   <a
-                                    href="#top-of-page"
+                                    href="#contact-info"
                                     className={NavStyle.a}
                                     style={{ color: "#61dafb" }}
                                   >

@@ -45,7 +45,7 @@ class Main extends Component {
   render() {
     return (
       <>
-        <div className={Style.siteWrapper}>
+        <div id="top-of-page" className={Style.siteWrapper}>
           <NavBar />
           <div className={Style.starWrapper}>
             <Stars />
@@ -54,7 +54,9 @@ class Main extends Component {
           <div className={Style.aboutMeWrapper}>
             <Container className={Style.aboutMeContainer}>
               <Row className={Style.aboutMeHeader}>
-                <h2 className={Style.aboutHeader}>About</h2>
+                <h2 id="about-info" className={Style.aboutHeader}>
+                  About
+                </h2>
               </Row>
               <hr className={Style.hr1Main} />
               <Row className={Style.aboutMeRow}>
@@ -158,11 +160,18 @@ class Main extends Component {
                     />
                   </div>
                 </Row>
+                <br />
+                <Row>
+                  <h5 className={Style.moreAboutMe}>More...</h5>
+                </Row>
               </div>
               {/* Bar Chart Container */}
             </Container>
           </div>
           {/* About Me Area */}
+          <div id="portfolio-info" className={Style.portfolioWrapper}>
+            <Container className={Style.portfolioContainer}></Container>
+          </div>
         </div>
         {/* Curved Div */}
         <svg
@@ -180,6 +189,7 @@ class Main extends Component {
         </svg>
         {/* Curved Div */}
         <Footer />
+        <div id="contact-info" />
       </>
     );
   }

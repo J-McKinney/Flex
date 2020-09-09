@@ -141,6 +141,10 @@ body::-webkit-scrollbar {
   width: 100%;
   height: auto;
 }
+
+.moreAboutMe {
+  color: #ffffff;
+}
 /* Bar Chart */
 
 @media screen and (max-width: 1119px) {
