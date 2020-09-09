@@ -1,9 +1,9 @@
 .siteWrapper {
   background-color: #ffffff;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-.mainWrapper {
+.starWrapper {
   display: flex;
   flex-wrap: wrap-reverse;
   position: relative;
@@ -27,6 +27,7 @@
   height: auto;
   background-color: #282c34;
   margin-bottom: -0.3vh;
+  /* padding-bottom: 30vh; */
 }
 
 .aboutMeContainer,
@@ -58,6 +59,7 @@
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 #aboutMeIcon {
@@ -79,7 +81,7 @@
   width: 100%;
   height: auto;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 7.5%;
   background-color: #282c34;
   display: flex;
   flex-wrap: wrap;
@@ -139,6 +141,12 @@
 
   .aboutMePTags {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .barChartContainer {
+    margin-bottom: 100%;
   }
 }
 
