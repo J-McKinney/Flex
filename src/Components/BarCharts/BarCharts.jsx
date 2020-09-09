@@ -50,59 +50,60 @@ class BarCharts extends Component {
                 </Fade>
               </div>
               <div className="col-md-6" id={Style.barChartCol}>
-                {/* <Fade right duration={1000} delay={500}> */}
-                <HorizontalBar
-                  className={Style.barChart}
-                  data={chart}
-                  height={500}
-                  width={500}
-                  options={{
-                    animation: {
-                      duration: 5000,
-                    },
-                    events: ["null"],
-                    responsive: true,
-                    maintainAspectRatio: true,
-                    title: {
-                      display: false,
-                    },
-                    legend: {
-                      display: false,
-                    },
-                    tooltips: {
-                      enabled: false,
-                    },
-                    scales: {
-                      yAxes: [
-                        {
-                          stacked: true,
-                          ticks: {
-                            suggestedMin: 0,
-                            suggestedMax: 100,
-                            fontSize: 17,
-                            beginAtZero: true,
+                <Fade right duration={1000} delay={500}>
+                  <HorizontalBar
+                    className={Style.barChart}
+                    data={chart}
+                    height={500}
+                    width={500}
+                    options={{
+                      animation: {
+                        duration: 5200,
+                        delay: 10000,
+                      },
+                      events: ["null"],
+                      responsive: true,
+                      maintainAspectRatio: true,
+                      title: {
+                        display: false,
+                      },
+                      legend: {
+                        display: false,
+                      },
+                      tooltips: {
+                        enabled: false,
+                      },
+                      scales: {
+                        yAxes: [
+                          {
+                            stacked: true,
+                            ticks: {
+                              suggestedMin: 0,
+                              suggestedMax: 100,
+                              fontSize: 17,
+                              beginAtZero: true,
+                            },
+                            gridLines: {
+                              display: false,
+                            },
                           },
-                          gridLines: {
-                            display: false,
+                        ],
+                        xAxes: [
+                          {
+                            stacked: true,
+                            ticks: {
+                              suggestedMin: 0,
+                              suggestedMax: 100,
+                              fontSize: 22,
+                              beginAtZero: true,
+                            },
+                            display: 0,
                           },
-                        },
-                      ],
-                      xAxes: [
-                        {
-                          stacked: true,
-                          ticks: {
-                            suggestedMin: 0,
-                            suggestedMax: 100,
-                            fontSize: 22,
-                            beginAtZero: true,
-                          },
-                          display: 0,
-                        },
-                      ],
-                    },
-                  }}
-                />
-                {/* </Fade> */}
+                        ],
+                      },
+                    }}
+                  />
+                </Fade>
               </div>
             </Row>
           </Container>

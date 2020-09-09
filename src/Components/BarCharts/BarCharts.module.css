@@ -8,6 +8,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  margin-top: 2%;
 }
 
 .container {
@@ -65,8 +66,22 @@
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 760px) {
   .row {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .MyPic {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 311px) {
+  .MyPic {
+    width: 220px;
+    height: 170px;
   }
 }
