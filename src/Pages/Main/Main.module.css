@@ -147,6 +147,13 @@ body::-webkit-scrollbar {
 }
 /* Bar Chart */
 
+.portfolioWrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 10;
+}
+
 @media screen and (max-width: 1119px) {
   .hr1Me {
     width: 53%;
