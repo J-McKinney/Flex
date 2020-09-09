@@ -2,22 +2,21 @@ import React, { Component } from "react";
 import { HorizontalBar } from "react-chartjs-2";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Fade from "react-reveal/Fade";
 import Me from "../../images/Me.JPG";
 import Style from "./BarCharts.module.css";
 
 const chart = {
   labels: [
-    "HTML    ",
-    "CSS    ",
-    "BootStrap    ",
-    "JavaScript    ",
-    "React    ",
-    "Angular    ",
-    "Node.js    ",
-    "Mongoose    ",
-    "MySQL    ",
+    "HTML   ",
+    "CSS   ",
+    "BootStrap   ",
+    "JavaScript   ",
+    "React   ",
+    "Angular   ",
+    "Node.js   ",
+    "Mongoose   ",
+    "MySQL   ",
   ],
   datasets: [
     {
@@ -39,75 +38,72 @@ const chart = {
 };
 
 class BarCharts extends Component {
-  componentDidMount() {
-    console.log("componentDidMount: ");
-  }
-  componentDidUpdate() {
-    console.log("componentDidUpdate: ");
-  }
-
   render() {
     return (
       <>
         <div className={Style.wrapper}>
           <Container className={Style.container}>
             <Row className={Style.row}>
-              <Col className={Style.MyPicCol}>
+              <div className="col-md-6" id={Style.MyPicCol}>
                 <Fade left duration={1000} delay={500}>
                   <img className={Style.MyPic} src={Me} alt="Me" />
                 </Fade>
-              </Col>
-              <Col className={Style.barChartCol}>
-                <Fade right duration={1000} delay={500}>
-                  <HorizontalBar
-                    className={Style.barChart}
-                    data={chart}
-                    height={500}
-                    options={{
-                      responsive: true,
-                      events: ["null"],
-                      maintainAspectRatio: false,
-                      title: {
-                        display: false,
-                      },
-                      legend: {
-                        display: false,
-                      },
-                      tooltips: {
-                        enabled: false,
-                      },
-                      scales: {
-                        yAxes: [
-                          {
-                            stacked: true,
-                            ticks: {
-                              suggestedMin: 0,
-                              suggestedMax: 100,
-                              fontSize: 22,
-                              beginAtZero: true,
-                            },
-                            gridLines: {
-                              display: false,
-                            },
+              </div>
+              <div className="col-md-6" id={Style.barChartCol}>
+                {/* <Fade right duration={1000} delay={500}> */}
+                <HorizontalBar
+                  className={Style.barChart}
+                  data={chart}
+                  height={500}
+                  width={500}
+                  options={{
+                    animation: {
+                      duration: 5000,
+                    },
+                    events: ["null"],
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    title: {
+                      display: false,
+                    },
+                    legend: {
+                      display: false,
+                    },
+                    tooltips: {
+                      enabled: false,
+                    },
+                    scales: {
+                      yAxes: [
+                        {
+                          stacked: true,
+                          ticks: {
+                            suggestedMin: 0,
+                            suggestedMax: 100,
+                            fontSize: 17,
+                            beginAtZero: true,
                           },
-                        ],
-                        xAxes: [
-                          {
-                            stacked: true,
-                            ticks: {
-                              suggestedMin: 0,
-                              suggestedMax: 100,
-                              fontSize: 22,
-                              beginAtZero: true,
-                            },
-                            display: 0,
+                          gridLines: {
+                            display: false,
                           },
-                        ],
-                      },
-                    }}
-                  />
-                </Fade>
-              </Col>
+                        },
+                      ],
+                      xAxes: [
+                        {
+                          stacked: true,
+                          ticks: {
+                            suggestedMin: 0,
+                            suggestedMax: 100,
+                            fontSize: 22,
+                            beginAtZero: true,
+                          },
+                          display: 0,
+                        },
+                      ],
+                    },
+                  }}
+                />
+                {/* </Fade> */}
+              </div>
             </Row>
           </Container>
         </div>
