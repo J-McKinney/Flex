@@ -116,6 +116,16 @@
   border-radius: 50px;
 }
 
+.talkingAboutMeH3 {
+  margin-top: 3%;
+  color: #ffffff;
+}
+
+.hr1Me {
+  border: 1px solid #ffffff;
+  width: 44%;
+}
+
 .talkingAboutMe {
   color: #ffffff;
 }
@@ -126,6 +136,12 @@
 }
 /* Bar Chart */
 
+@media screen and (max-width: 1119px) {
+  .hr1Me {
+    width: 53%;
+  }
+}
+
 @media screen and (max-width: 991px) {
   #MyPicCol,
   #barChartCol {
@@ -135,6 +151,10 @@
   .barChartMyPic {
     width: 300px;
     height: 250px;
+  }
+
+  .hr1Me {
+    width: 70%;
   }
 }
 
@@ -152,6 +172,10 @@
   .barChartContainer {
     margin-bottom: 100%;
   }
+
+  .hr1Me {
+    width: 47%;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -164,6 +188,10 @@
 @media screen and (max-width: 420px) {
   .hr1Main {
     width: 27.5%;
+  }
+
+  .hr1Me {
+    width: 80%;
   }
 }
 
@@ -178,6 +206,10 @@
     width: 250px;
     height: 200px;
   }
+
+  .hr1Me {
+    width: 86%;
+  }
 }
 
 @media screen and (max-width: 311px) {
@@ -190,5 +222,9 @@
 @media screen and (max-width: 300px) {
   .hr1Main {
     width: 37.5%;
+  }
+
+  .hr1Me {
+    width: 44%;
   }
 }

@@ -94,12 +94,12 @@ class Main extends Component {
                 <Row className={Style.barChartRow}>
                   <div className="col-md-6" id={Style.MyPicCol}>
                     <img className={Style.barChartMyPic} src={Me} alt="Me" />
+                    <h3 className={Style.talkingAboutMeH3}>Talking about me?</h3>
+                    <hr className={Style.hr1Me}/>
                     <p className={Style.talkingAboutMe}>
-                      Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-                      Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                      Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-                      Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                      Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum{" "}
+                      I'm a Free-Lance Front-End Developer in Atlanta, GA.
+                      I have serious passion for UI effects, animations and
+                      creating intuitive, dynamic user experiences.{" "}
                     </p>
                   </div>
                   <div className="col-md-6" id={Style.barChartCol}>
