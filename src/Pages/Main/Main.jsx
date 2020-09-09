@@ -34,9 +34,9 @@ const chart = {
       data: [65, 59, 80, 100, 56, 55, 40, 62, 22, 80],
     },
     {
-      backgroundColor: "#555555",
+      // backgroundColor: "#ffffff",
       // The 2 Sets Of Data Numbers Need To Add Up To 100
-      data: [35, 41, 20, 0, 44, 45, 60, 38, 78, 20],
+      // data: [35, 41, 20, 0, 44, 45, 60, 38, 78, 20],
     },
   ],
 };
@@ -94,6 +94,13 @@ class Main extends Component {
                 <Row className={Style.barChartRow}>
                   <div className="col-md-6" id={Style.MyPicCol}>
                     <img className={Style.barChartMyPic} src={Me} alt="Me" />
+                    <p className={Style.talkingAboutMe}>
+                      Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+                      Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                      Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+                      Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                      Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum{" "}
+                    </p>
                   </div>
                   <div className="col-md-6" id={Style.barChartCol}>
                     <HorizontalBar
@@ -102,6 +109,9 @@ class Main extends Component {
                       height={400}
                       width={400}
                       options={{
+                        animation: {
+                          duration: 0,
+                        },
                         events: ["null"],
                         responsive: true,
                         maintainAspectRatio: true,
@@ -122,6 +132,7 @@ class Main extends Component {
                                 suggestedMin: 0,
                                 suggestedMax: 100,
                                 fontSize: 17,
+                                fontColor: "white",
                                 beginAtZero: true,
                               },
                               gridLines: {
@@ -135,7 +146,6 @@ class Main extends Component {
                               ticks: {
                                 suggestedMin: 0,
                                 suggestedMax: 100,
-                                fontSize: 17,
                                 beginAtZero: true,
                               },
                               display: 0,
