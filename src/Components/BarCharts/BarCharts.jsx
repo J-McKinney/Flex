@@ -41,12 +41,12 @@ class BarCharts extends Component {
   render() {
     return (
       <>
-        <div className={Style.wrapper}>
-          <Container className={Style.container}>
-            <Row className={Style.row}>
+        <div className={Style.barChartWrapper}>
+          <Container className={Style.barChartContainer}>
+            <Row className={Style.barChartRow}>
               <div className="col-md-6" id={Style.MyPicCol}>
                 <Fade left duration={1000} delay={500}>
-                  <img className={Style.MyPic} src={Me} alt="Me" />
+                  <img className={Style.barChartMyPic} src={Me} alt="Me" />
                 </Fade>
               </div>
               <div className="col-md-6" id={Style.barChartCol}>

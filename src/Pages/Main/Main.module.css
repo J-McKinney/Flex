@@ -1,5 +1,6 @@
 .siteWrapper {
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .mainWrapper {
@@ -73,6 +74,64 @@
   color: #ffffff;
 }
 
+/* Bar Chart */
+.barChartContainer {
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: #282c34;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.barChartRow {
+  width: 100%;
+  background-color: #282c34;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#MyPicCol,
+#barChartCol {
+  background-color: #282c34;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10%;
+}
+
+.barChartMyPic {
+  margin-top: 3.8%;
+  width: 400px;
+  height: 300px;
+  border-radius: 50px;
+}
+
+.barChart {
+  width: 100%;
+  height: auto;
+}
+/* Bar Chart */
+
+@media screen and (max-width: 991px) {
+  #MyPicCol,
+  #barChartCol {
+    flex: 50%;
+  }
+
+  .barChartMyPic {
+    width: 300px;
+    height: 250px;
+  }
+}
+
 @media screen and (max-width: 770px) {
   .aboutMeRow {
     flex-direction: column;
@@ -80,6 +139,13 @@
 
   .aboutMePTags {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .barChartRow {
+    flex-direction: column;
+    margin-bottom: 10%;
   }
 }
 
@@ -92,6 +158,20 @@
 @media screen and (max-width: 360px) {
   .hr1Main {
     width: 30%;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .barChartMyPic {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 311px) {
+  .barChartMyPic {
+    width: 220px;
+    height: 170px;
   }
 }
 

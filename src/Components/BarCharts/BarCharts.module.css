@@ -1,7 +1,8 @@
-.wrapper {
+.barChartWrapper {
   background-color: #ffffff;
   overflow-x: hidden;
   z-index: 10;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -11,7 +12,7 @@
   margin-top: 2%;
 }
 
-.container {
+.barChartContainer {
   width: 100%;
   height: auto;
   margin-top: 5%;
@@ -25,7 +26,7 @@
   justify-content: center;
 }
 
-.row {
+.barChartRow {
   width: 100%;
   background-color: #ffffff;
   text-align: center;
@@ -43,7 +44,7 @@
   height: auto;
 }
 
-.MyPic {
+.barChartMyPic {
   width: 450px;
   height: 350px;
   border-radius: 50px;
@@ -60,27 +61,27 @@
     flex: 50%;
   }
 
-  .MyPic {
+  .barChartMyPic {
     width: 300px;
     height: 250px;
   }
 }
 
 @media screen and (max-width: 760px) {
-  .row {
+  .barChartRow {
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 359px) {
-  .MyPic {
+  .barChartMyPic {
     width: 250px;
     height: 200px;
   }
 }
 
 @media screen and (max-width: 311px) {
-  .MyPic {
+  .barChartMyPic {
     width: 220px;
     height: 170px;
   }
