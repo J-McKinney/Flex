@@ -31,12 +31,12 @@ const chart = {
       hoverBackgroundColor: "#61dafb",
       hoverBorderColor: "#61dafb",
       // The 2 Sets Of Data Numbers Need To Add Up To 100
-      data: [65, 59, 80, 100, 56, 55, 40, 62, 22, 80],
+      data: [90, 85, 90, 95, 95, 55, 75, 80, 65, 55],
     },
     {
-      // backgroundColor: "#ffffff",
+      backgroundColor: "#ffffff",
       // The 2 Sets Of Data Numbers Need To Add Up To 100
-      // data: [35, 41, 20, 0, 44, 45, 60, 38, 78, 20],
+      data: [10, 15, 10, 5, 5, 45, 25, 20, 35, 45],
     },
   ],
 };
