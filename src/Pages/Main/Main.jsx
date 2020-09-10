@@ -170,15 +170,7 @@ class Main extends Component {
           </div>
           {/* About Me Area */}
           {/* Portfolio Section */}
-          {/* <div id="portfolio-info" className={Style.portfolioWrapper}>
-            <div className={Style.wrapper}>
-              <Container className={Style.container}>
-                <Row className={Style.row}>
-                  <Col className={Style.col}></Col>
-                </Row>
-              </Container>
-            </div>
-          </div> */}
+
           {/* Portfolio Section */}
         </div>
         {/* Curved Div */}

@@ -15,7 +15,9 @@ class StarsContainer extends Component {
     //setup camera with facing upward
     camera = new THREE.PerspectiveCamera(
       1000,
-      window.innerWidth / window.innerHeight,
+      window.outerWidth / window.outerHeight,
+      // window.innerWidth / window.innerHeight,
+
       0.1,
       1000
     );
@@ -23,7 +25,7 @@ class StarsContainer extends Component {
     camera.position.x = Math.PI / 2;
     //setup renderer
     renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window.outerWidth, window.outerHeight);
     document.body.appendChild(renderer.domElement);
     starGeo = new THREE.Geometry();
     for (let i = 0; i < 6000; i++) {
@@ -48,9 +50,9 @@ class StarsContainer extends Component {
     this.animate();
   };
   onWindowResize = () => {
-    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.aspect = window.outerWidth / window.outerHeight;
     camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window.outerWidth, window.outerHeight);
   };
   //rendering loop
   animate = () => {
