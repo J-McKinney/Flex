@@ -169,7 +169,15 @@ class Main extends Component {
             </Container>
           </div>
           {/* About Me Area */}
-          <div id="portfolio-info" className={Style.portfolioWrapper}></div>
+          <div id="portfolio-info" className={Style.portfolioWrapper}>
+            <div className={Style.wrapper}>
+              <Container className={Style.container}>
+                <Row className={Style.row}>
+                  <Col className={Style.col}></Col>
+                </Row>
+              </Container>
+            </div>
+          </div>
         </div>
         {/* Curved Div */}
         <svg
