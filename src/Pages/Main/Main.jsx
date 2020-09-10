@@ -161,7 +161,7 @@ class Main extends Component {
                   </div>
                 </Row>
                 <br />
-                <Row>
+                <Row className={Style.moreRow}>
                   <h5 className={Style.moreAboutMe}>More...</h5>
                 </Row>
               </div>
@@ -169,7 +169,8 @@ class Main extends Component {
             </Container>
           </div>
           {/* About Me Area */}
-          <div id="portfolio-info" className={Style.portfolioWrapper}>
+          {/* Portfolio Section */}
+          {/* <div id="portfolio-info" className={Style.portfolioWrapper}>
             <div className={Style.wrapper}>
               <Container className={Style.container}>
                 <Row className={Style.row}>
@@ -177,7 +178,8 @@ class Main extends Component {
                 </Row>
               </Container>
             </div>
-          </div>
+          </div> */}
+          {/* Portfolio Section */}
         </div>
         {/* Curved Div */}
         <svg

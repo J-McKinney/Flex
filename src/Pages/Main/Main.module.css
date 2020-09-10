@@ -141,6 +141,11 @@ body::-webkit-scrollbar {
   height: auto;
 }
 
+.moreRow {
+  position: relative;
+  z-index: 10;
+}
+
 .moreAboutMe {
   color: #ffffff;
 }
@@ -245,7 +250,13 @@ body::-webkit-scrollbar {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.999px) {
+  .barChartContainer {
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 766.999px) {
   .barChartContainer {
     margin-bottom: 100%;
   }
@@ -256,6 +267,10 @@ body::-webkit-scrollbar {
 
   .hr1Me {
     width: 47%;
+  }
+
+  .moreRow {
+    margin-top: 10%;
   }
 }
 
