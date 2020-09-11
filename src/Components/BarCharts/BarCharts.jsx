@@ -1,116 +1,125 @@
-import React, { Component } from "react";
-import { HorizontalBar } from "react-chartjs-2";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Fade from "react-reveal/Fade";
-import Me from "../../images/Me.JPG";
+import Col from "react-bootstrap/Col";
 import Style from "./BarCharts.module.css";
 
-const chart = {
-  labels: [
-    "HTML   ",
-    "CSS   ",
-    "BootStrap   ",
-    "JavaScript   ",
-    "React   ",
-    "Angular   ",
-    "Node.js   ",
-    "Mongoose   ",
-    "MySQL   ",
-  ],
-  datasets: [
-    {
-      label: "My Favorite Languages To Code In",
-      backgroundColor: "#61dafb",
-      borderColor: "#61dafb",
-      borderWidth: 1,
-      hoverBackgroundColor: "#61dafb",
-      hoverBorderColor: "#61dafb",
-      // The 2 Sets Of Data Numbers Need To Add Up To 100
-      data: [65, 59, 80, 100, 56, 55, 40, 62, 22],
-    },
-    {
-      backgroundColor: "#555555",
-      // The 2 Sets Of Data Numbers Need To Add Up To 100
-      data: [35, 41, 20, 0, 44, 45, 60, 38, 78],
-    },
-  ],
-};
+const BarCharts = () => {
+  return (
+    <>
+      <div className={Style.wrapper}>
+        <Container fluid className={Style.container}>
+          <Row className={Style.row}>
+            {/* Pic Of Me/As Big As You Want */}
+            <Col id={Style.myPicCol} className="col-sm-6">
+              <Container className={Style.myPicContainer}>
+                <Row className={Style.row}>
+                  <Col className="col-sm-12" id={Style.myPicCol}>
+                    Pic Of Me
+                  </Col>
+                </Row>
+              </Container>
+            </Col>
 
-class BarCharts extends Component {
-  render() {
-    return (
-      <>
-        <div className={Style.barChartWrapper}>
-          <Container className={Style.barChartContainer}>
-            <Row className={Style.barChartRow}>
-              <div className="col-md-6" id={Style.MyPicCol}>
-                <Fade left duration={1000} delay={500}>
-                  <img className={Style.barChartMyPic} src={Me} alt="Me" />
-                </Fade>
-              </div>
-              <div className="col-md-6" id={Style.barChartCol}>
-                <Fade right duration={1000} delay={500}>
-                  <HorizontalBar
-                    className={Style.barChart}
-                    data={chart}
-                    height={500}
-                    width={500}
-                    options={{
-                      animation: {
-                        duration: 5200,
-                        delay: 10000,
-                      },
-                      events: ["null"],
-                      responsive: true,
-                      maintainAspectRatio: true,
-                      title: {
-                        display: false,
-                      },
-                      legend: {
-                        display: false,
-                      },
-                      tooltips: {
-                        enabled: false,
-                      },
-                      scales: {
-                        yAxes: [
-                          {
-                            stacked: true,
-                            ticks: {
-                              suggestedMin: 0,
-                              suggestedMax: 100,
-                              fontSize: 17,
-                              beginAtZero: true,
-                            },
-                            gridLines: {
-                              display: false,
-                            },
-                          },
-                        ],
-                        xAxes: [
-                          {
-                            stacked: true,
-                            ticks: {
-                              suggestedMin: 0,
-                              suggestedMax: 100,
-                              fontSize: 22,
-                              beginAtZero: true,
-                            },
-                            display: 0,
-                          },
-                        ],
-                      },
-                    }}
-                  />
-                </Fade>
-              </div>
-            </Row>
-          </Container>
-        </div>
-      </>
-    );
-  }
-}
+            {/* Bar Chart Area/Neumorphism Stuff */}
+            <Col id={Style.barChartCol} className="col-sm-6">
+              <Container className={Style.myBarChartContainer}>
+                <Row className={Style.myBarChartRow}>
+                  <Col className="col-sm-2" id={Style.barChartHTML}>
+                    HTML
+                  </Col>
+                  <Col className="col-sm-10" id={Style.barChartHTML}>
+                    HTML
+                  </Col>
+                </Row>
+                <br />
+                <Row className={Style.myBarChartRow}>
+                  <Col className="col-sm-2" id={Style.barChartCSS}>
+                    CSS
+                  </Col>
+                  <Col className="col-sm-10" id={Style.barChartCSS}>
+                    CSS
+                  </Col>
+                </Row>
+                <br />
+                <Row className={Style.myBarChartRow}>
+                  <Col className="col-sm-2" id={Style.barChartBootStrap}>
+                    BootStrap
+                  </Col>
+                  <Col className="col-sm-10" id={Style.barChartBootStrap}>
+                    BootStrap
+                  </Col>
+                </Row>
+                <br />
+                <Row className={Style.myBarChartRow}>
+                  <Col className="col-sm-2" id={Style.barChartJavaScript}>
+                    JavaScript
+                  </Col>
+                  <Col className="col-sm-10" id={Style.barChartJavaScript}>
+                    JavaScript
+                  </Col>
+                </Row>
+                <br />
+                <Row className={Style.myBarChartRow}>
+                  <Col className="col-sm-2" id={Style.barChartReact}>
+                    React
+                  </Col>
+                  <Col className="col-sm-10" id={Style.barChartReact}>
+                    React
+                  </Col>
+                </Row>
+                <br />
+                <Row className={Style.myBarChartRow}>
+                  <Col className="col-sm-2" id={Style.barChartAngular}>
+                    Angular
+                  </Col>
+                  <Col className="col-sm-10" id={Style.barChartAngular}>
+                    Angular
+                  </Col>
+                </Row>
+                <br />
+                <Row className={Style.myBarChartRow}>
+                  <Col className="col-sm-2" id={Style.barChartNode}>
+                    Node.js
+                  </Col>
+                  <Col className="col-sm-10" id={Style.barChartNode}>
+                    Node.js
+                  </Col>
+                </Row>
+                <br />
+                <Row className={Style.myBarChartRow}>
+                  <Col className="col-sm-2" id={Style.barChartMongoose}>
+                    Mongoose
+                  </Col>
+                  <Col className="col-sm-10" id={Style.barChartMongoose}>
+                    Mongoose
+                  </Col>
+                </Row>
+                <br />
+                <Row className={Style.myBarChartRow}>
+                  <Col className="col-sm-2" id={Style.barChartMySQL}>
+                    MySQL
+                  </Col>
+                  <Col className="col-sm-10" id={Style.barChartMySQL}>
+                    MySQL
+                  </Col>
+                </Row>
+                <br />
+                <Row className={Style.myBarChartRow}>
+                  <Col className="col-sm-2" id={Style.barChartThree}>
+                    Three.js
+                  </Col>
+                  <Col className="col-sm-10" id={Style.barChartThree}>
+                    Three.js
+                  </Col>
+                </Row>
+              </Container>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </>
+  );
+};
 
 export default BarCharts;
