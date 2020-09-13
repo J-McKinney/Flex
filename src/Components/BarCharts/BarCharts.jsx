@@ -10,11 +10,11 @@ const BarCharts = () => {
       <div className={Style.wrapper}>
         <Container fluid className={Style.container}>
           <Row className={Style.row}>
-            {/* Pic Of Me/As Big As You Want */}
+            {/* Pic Of Me/As Big As I Want */}
             <Col id={Style.myPicCol} className="col-sm-6">
               <Container className={Style.myPicContainer}>
-                <Row className={Style.row}>
-                  <Col className="col-sm-12" id={Style.myPicCol}>
+                <Row className={Style.myPicRow}>
+                  <Col className="col-sm-12" id={Style.myActualPicCol}>
                     Pic Of Me
                   </Col>
                 </Row>
@@ -24,95 +24,113 @@ const BarCharts = () => {
             {/* Bar Chart Area/Neumorphism Stuff */}
             <Col id={Style.barChartCol} className="col-sm-6">
               <Container className={Style.myBarChartContainer}>
-                <Row className={Style.myBarChartRow}>
-                  <Col className="col-sm-2" id={Style.barChartHTML}>
+                <Row className={Style.myBarChartRowHTML}>
+                  <Col className="col-sm-2" id={Style.barChartHTMLName}>
                     HTML
                   </Col>
-                  <Col className="col-sm-10" id={Style.barChartHTML}>
+                  <Col className="col-sm-10" id={Style.barChartHTMLGraph}>
                     HTML
                   </Col>
                 </Row>
-                <br />
-                <Row className={Style.myBarChartRow}>
-                  <Col className="col-sm-2" id={Style.barChartCSS}>
+
+                {/* <br />
+
+                <Row className={Style.myBarChartRowCSS}>
+                  <Col className="col-sm-2" id={Style.barChartCSSName}>
                     CSS
                   </Col>
-                  <Col className="col-sm-10" id={Style.barChartCSS}>
+                  <Col className="col-sm-10" id={Style.barChartCSSGraph}>
                     CSS
                   </Col>
                 </Row>
+
                 <br />
-                <Row className={Style.myBarChartRow}>
-                  <Col className="col-sm-2" id={Style.barChartBootStrap}>
+
+                <Row className={Style.myBarChartRowBootStrap}>
+                  <Col className="col-sm-2" id={Style.barChartBootStrapName}>
                     BootStrap
                   </Col>
-                  <Col className="col-sm-10" id={Style.barChartBootStrap}>
+                  <Col className="col-sm-10" id={Style.barChartBootStrapGraph}>
                     BootStrap
                   </Col>
                 </Row>
+
                 <br />
-                <Row className={Style.myBarChartRow}>
-                  <Col className="col-sm-2" id={Style.barChartJavaScript}>
+
+                <Row className={Style.myBarChartRowJavaScript}>
+                  <Col className="col-sm-2" id={Style.barChartJavaScriptName}>
                     JavaScript
                   </Col>
-                  <Col className="col-sm-10" id={Style.barChartJavaScript}>
+                  <Col className="col-sm-10" id={Style.barChartJavaScriptGraph}>
                     JavaScript
                   </Col>
                 </Row>
+
                 <br />
-                <Row className={Style.myBarChartRow}>
-                  <Col className="col-sm-2" id={Style.barChartReact}>
+
+                <Row className={Style.myBarChartRowReact}>
+                  <Col className="col-sm-2" id={Style.barChartReactName}>
                     React
                   </Col>
-                  <Col className="col-sm-10" id={Style.barChartReact}>
+                  <Col className="col-sm-10" id={Style.barChartReactGraph}>
                     React
                   </Col>
                 </Row>
+
                 <br />
-                <Row className={Style.myBarChartRow}>
-                  <Col className="col-sm-2" id={Style.barChartAngular}>
+
+                <Row className={Style.myBarChartRowAngular}>
+                  <Col className="col-sm-2" id={Style.barChartAngularName}>
                     Angular
                   </Col>
-                  <Col className="col-sm-10" id={Style.barChartAngular}>
+                  <Col className="col-sm-10" id={Style.barChartAngularGraph}>
                     Angular
                   </Col>
                 </Row>
+
                 <br />
-                <Row className={Style.myBarChartRow}>
-                  <Col className="col-sm-2" id={Style.barChartNode}>
+
+                <Row className={Style.myBarChartRowNode}>
+                  <Col className="col-sm-2" id={Style.barChartNodeName}>
                     Node.js
                   </Col>
-                  <Col className="col-sm-10" id={Style.barChartNode}>
+                  <Col className="col-sm-10" id={Style.barChartNodeGraph}>
                     Node.js
                   </Col>
                 </Row>
+
                 <br />
-                <Row className={Style.myBarChartRow}>
-                  <Col className="col-sm-2" id={Style.barChartMongoose}>
+
+                <Row className={Style.myBarChartRowMongoose}>
+                  <Col className="col-sm-2" id={Style.barChartMongooseName}>
                     Mongoose
                   </Col>
-                  <Col className="col-sm-10" id={Style.barChartMongoose}>
+                  <Col className="col-sm-10" id={Style.barChartMongooseGraph}>
                     Mongoose
                   </Col>
                 </Row>
+
                 <br />
-                <Row className={Style.myBarChartRow}>
-                  <Col className="col-sm-2" id={Style.barChartMySQL}>
+
+                <Row className={Style.myBarChartRowMySQL}>
+                  <Col className="col-sm-2" id={Style.barChartMySQLName}>
                     MySQL
                   </Col>
-                  <Col className="col-sm-10" id={Style.barChartMySQL}>
+                  <Col className="col-sm-10" id={Style.barChartMySQLGraph}>
                     MySQL
                   </Col>
                 </Row>
+
                 <br />
-                <Row className={Style.myBarChartRow}>
-                  <Col className="col-sm-2" id={Style.barChartThree}>
+
+                <Row className={Style.myBarChartRowThree}>
+                  <Col className="col-sm-2" id={Style.barChartThreeName}>
                     Three.js
                   </Col>
-                  <Col className="col-sm-10" id={Style.barChartThree}>
+                  <Col className="col-sm-10" id={Style.barChartThreeGraph}>
                     Three.js
                   </Col>
-                </Row>
+                </Row> */}
               </Container>
             </Col>
           </Row>
