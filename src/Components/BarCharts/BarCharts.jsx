@@ -9,7 +9,7 @@ const BarCharts = () => {
   return (
     <>
       <div className={Style.wrapper}>
-        <div fluid className={Style.container}>
+        <div fluid="true" className={Style.container}>
           <div className={Style.row}>
             {/* Pic Of Me/As Big As I Want */}
             <Col id={Style.myPicCol} className="col-lg-6">
