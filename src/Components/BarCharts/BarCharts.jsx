@@ -27,53 +27,73 @@ const BarCharts = () => {
               <Container className={Style.myBarChartContainer}>
                 <div className={Style.containerHTML}>
                   <div className={Style.skills}>
-                    <div className={Style.html}>HTML</div>
+                    <div className={Style.html}>
+                      HTML<div className={Style.percent}>90%</div>
+                    </div>
                   </div>
                 </div>
 
                 <div className={Style.containerCSS}>
                   <div className={Style.skills}>
-                    <div className={Style.css}>CSS</div>
+                    <div className={Style.css}>
+                      CSS<div className={Style.percent}>90%</div>
+                    </div>
                   </div>
                 </div>
                 <div className={Style.containerBootStrap}>
                   <div className={Style.skills}>
-                    <div className={Style.bootstrap}>BootStrap</div>
+                    <div className={Style.bootstrap}>
+                      BootStrap<div className={Style.percent}>95%</div>
+                    </div>
                   </div>
                 </div>
                 <div className={Style.containerJavaScript}>
                   <div className={Style.skills}>
-                    <div className={Style.javascript}>JavaScript</div>
+                    <div className={Style.javascript}>
+                      JavaScript<div className={Style.percent}>95%</div>
+                    </div>
                   </div>
                 </div>
                 <div className={Style.containerReact}>
                   <div className={Style.skills}>
-                    <div className={Style.react}>React</div>
-                  </div>
-                </div>
-                <div className={Style.containerAngular}>
-                  <div className={Style.skills}>
-                    <div className={Style.angular}>Angular</div>
+                    <div className={Style.react}>
+                      React<div className={Style.percent}>95%</div>
+                    </div>
                   </div>
                 </div>
                 <div className={Style.containerNode}>
                   <div className={Style.skills}>
-                    <div className={Style.node}>Node.js</div>
+                    <div className={Style.node}>
+                      Node.js<div className={Style.percent}>85%</div>
+                    </div>
                   </div>
                 </div>
                 <div className={Style.containerMongoose}>
                   <div className={Style.skills}>
-                    <div className={Style.mongoose}>Mongoose</div>
+                    <div className={Style.mongoose}>
+                      Mongoose<div className={Style.percent}>80%</div>
+                    </div>
                   </div>
                 </div>
                 <div className={Style.containerMySQL}>
                   <div className={Style.skills}>
-                    <div className={Style.mysql}>MySQL</div>
+                    <div className={Style.mysql}>
+                      MySQL<div className={Style.percent}>80%</div>
+                    </div>
                   </div>
                 </div>
                 <div className={Style.containerThree}>
                   <div className={Style.skills}>
-                    <div className={Style.three}>Three.js</div>
+                    <div className={Style.three}>
+                      Three.js<div className={Style.percent}>55%</div>
+                    </div>
+                  </div>
+                </div>
+                <div className={Style.containerAngular}>
+                  <div className={Style.skills}>
+                    <div className={Style.angular}>
+                      Angular<div className={Style.percent}>50%</div>
+                    </div>
                   </div>
                 </div>
               </Container>
