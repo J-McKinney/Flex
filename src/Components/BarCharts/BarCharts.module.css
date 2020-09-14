@@ -1,8 +1,10 @@
 .wrapper {
   width: 100%;
   height: auto;
-  /* background-color: #282c34; */
+  background-color: #282c34;
   box-sizing: border-box;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .container {
@@ -15,87 +17,126 @@
   height: auto;
 }
 
-.col {
-  width: 100%;
-  height: 100%;
-  background-color: antiquewhite;
+#myPicCol {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Neumorphism Stuff */
+.myPicContainer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 
-.containerHTML {
-  width: 100%;
-  background-color: #ffffff;
+.myPicRow {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#myActualPicCol {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.Me {
+  width: 350px;
+  height: 300px;
   border-radius: 50px;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  box-shadow: 5px 5px 7px 0 #00000040, -3px -3px 5px 0 #ffffff4d;
 }
-
-.skills {
-  text-align: right;
-  color: white;
-}
-
-.html {
-  border-radius: 50px;
-  padding-left: 5%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: start;
-  width: 90%;
-  background-color: #4caf50;
-}
-
-/* Neumorphism Stuff */
 
 #barChartCol {
+  width: 100%;
+  height: auto;
   /* background-color: #282c34; */
 }
 
 .myBarChartContainer {
-  /* background-color: blue; */
-}
-
-.myBarChartRowHTML {
-  /* background-color: brown; */
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-
-#bar {
-  height: 30px;
-  max-width: 90%;
-  border-radius: 50px;
-  color: aqua;
-  box-shadow: 3px 3px 4px 0 #00000040, -2px -2px 3px 0 #ffffff4d;
-}
-
-#tag {
-  border-radius: 50px 0 0 50px;
   width: 100%;
-  height: 30px;
-  background-color: blue;
+  height: auto;
+  /* background-color: blue; */
+  background-color: #282c34;
+  border-radius: 30px;
+  padding: 2.5%;
+  box-shadow: 15px 15px 15px #0b0d0f, -15px -15px 15px #444b58;
 }
 
-#barChart {
-  border-radius: 0 50px 50px 0;
-  max-width: 75%;
-  height: 30px;
-  background-color: green;
+/* Neumorphism Stuff */
+
+.containerHTML,
+.containerCSS,
+.containerBootStrap,
+.containerJavaScript,
+.containerReact,
+.containerAngular,
+.containerNode,
+.containerMongoose,
+.containerMySQL,
+.containerThree {
+  width: 100%;
+  background-color: #282c34;
+  border-radius: 10px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  /* margin-left: -5%; */
+  /* margin-right: -5%; */
+  margin-bottom: 2%;
+  /* box-shadow: 5px 5px 7px 0 #00000040, -3px -3px 5px 0 #ffffff4d; */
+  box-shadow: 5px 5px 5px 3px #0b0d0f, -1px -1px 2px 1px #444b58;
 }
 
-/* #barChartHTMLName {
-  border-radius: 50px 0 0 50px;
-  color: #afd275;
-  box-shadow: 3px 3px 4px 0 #00000040, -2px -2px 3px 0 #ffffff4d;
-} */
+.skills {
+  color: #000000;
+}
 
-/* #barChartHTMLGraph {
-  max-width: 100%;
-  border-radius: 0 50px 50px 0;
-  color: aqua;
-  box-shadow: 3px 3px 4px 0 #00000040, -2px -2px 3px 0 #ffffff4d;
-} */
+.html,
+.css,
+.bootstrap,
+.javascript,
+.react,
+.angular,
+.node,
+.mongoose,
+.mysql,
+.three {
+  border-radius: 10px;
+  padding-left: 2.5%;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  margin-left: 2.5px;
+  text-align: start;
+  background-color: #61dafb;
+}
+
+.html {
+  width: 90%;
+}
+.css {
+  width: 90%;
+}
+.bootstrap {
+  width: 95%;
+}
+.javascript {
+  width: 95%;
+}
+.react {
+  width: 95%;
+}
+.angular {
+  width: 50%;
+}
+.node {
+  width: 85%;
+}
+.mongoose {
+  width: 75%;
+}
+.mysql {
+  width: 75%;
+}
+.three {
+  width: 55%;
+}

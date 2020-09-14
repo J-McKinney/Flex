@@ -1,4 +1,5 @@
 import React from "react";
+import Me from "../../images/Me.JPG";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -15,7 +16,7 @@ const BarCharts = () => {
               <Container className={Style.myPicContainer}>
                 <Row className={Style.myPicRow}>
                   <Col className="col-sm-12" id={Style.myActualPicCol}>
-                    Pic Of Me
+                    <img className={Style.Me} src={Me} alt="Me" />
                   </Col>
                 </Row>
               </Container>
@@ -30,118 +31,51 @@ const BarCharts = () => {
                   </div>
                 </div>
 
-                {/* This works but is lengthy */}
-                {/* <Row className={Style.myBarChartRowHTML}>
-                  <Col className="col-12-sm" id={Style.bar}>
-                    <Row className={Style.row}>
-                      <Col id={Style.tag} className="col-sm-2">
-                        HTML
-                      </Col>
-                      <Col id={Style.barChart} className="col-sm-10">
-                        
-                      </Col>
-                    </Row>
-                  </Col>
-                </Row> */}
-
-                {/* <br />
-
-                <Row className={Style.myBarChartRowCSS}>
-                  <Col className="col-sm-2" id={Style.barChartCSSName}>
-                    CSS
-                  </Col>
-                  <Col className="col-sm-10" id={Style.barChartCSSGraph}>
-                    CSS
-                  </Col>
-                </Row>
-
-                <br />
-
-                <Row className={Style.myBarChartRowBootStrap}>
-                  <Col className="col-sm-2" id={Style.barChartBootStrapName}>
-                    BootStrap
-                  </Col>
-                  <Col className="col-sm-10" id={Style.barChartBootStrapGraph}>
-                    BootStrap
-                  </Col>
-                </Row>
-
-                <br />
-
-                <Row className={Style.myBarChartRowJavaScript}>
-                  <Col className="col-sm-2" id={Style.barChartJavaScriptName}>
-                    JavaScript
-                  </Col>
-                  <Col className="col-sm-10" id={Style.barChartJavaScriptGraph}>
-                    JavaScript
-                  </Col>
-                </Row>
-
-                <br />
-
-                <Row className={Style.myBarChartRowReact}>
-                  <Col className="col-sm-2" id={Style.barChartReactName}>
-                    React
-                  </Col>
-                  <Col className="col-sm-10" id={Style.barChartReactGraph}>
-                    React
-                  </Col>
-                </Row>
-
-                <br />
-
-                <Row className={Style.myBarChartRowAngular}>
-                  <Col className="col-sm-2" id={Style.barChartAngularName}>
-                    Angular
-                  </Col>
-                  <Col className="col-sm-10" id={Style.barChartAngularGraph}>
-                    Angular
-                  </Col>
-                </Row>
-
-                <br />
-
-                <Row className={Style.myBarChartRowNode}>
-                  <Col className="col-sm-2" id={Style.barChartNodeName}>
-                    Node.js
-                  </Col>
-                  <Col className="col-sm-10" id={Style.barChartNodeGraph}>
-                    Node.js
-                  </Col>
-                </Row>
-
-                <br />
-
-                <Row className={Style.myBarChartRowMongoose}>
-                  <Col className="col-sm-2" id={Style.barChartMongooseName}>
-                    Mongoose
-                  </Col>
-                  <Col className="col-sm-10" id={Style.barChartMongooseGraph}>
-                    Mongoose
-                  </Col>
-                </Row>
-
-                <br />
-
-                <Row className={Style.myBarChartRowMySQL}>
-                  <Col className="col-sm-2" id={Style.barChartMySQLName}>
-                    MySQL
-                  </Col>
-                  <Col className="col-sm-10" id={Style.barChartMySQLGraph}>
-                    MySQL
-                  </Col>
-                </Row>
-
-                <br />
-
-                <Row className={Style.myBarChartRowThree}>
-                  <Col className="col-sm-2" id={Style.barChartThreeName}>
-                    Three.js
-                  </Col>
-                  <Col className="col-sm-10" id={Style.barChartThreeGraph}>
-                    Three.js
-                  </Col>
-                </Row> */}
+                <div className={Style.containerCSS}>
+                  <div className={Style.skills}>
+                    <div className={Style.css}>CSS</div>
+                  </div>
+                </div>
+                <div className={Style.containerBootStrap}>
+                  <div className={Style.skills}>
+                    <div className={Style.bootstrap}>BootStrap</div>
+                  </div>
+                </div>
+                <div className={Style.containerJavaScript}>
+                  <div className={Style.skills}>
+                    <div className={Style.javascript}>JavaScript</div>
+                  </div>
+                </div>
+                <div className={Style.containerReact}>
+                  <div className={Style.skills}>
+                    <div className={Style.react}>React</div>
+                  </div>
+                </div>
+                <div className={Style.containerAngular}>
+                  <div className={Style.skills}>
+                    <div className={Style.angular}>Angular</div>
+                  </div>
+                </div>
+                <div className={Style.containerNode}>
+                  <div className={Style.skills}>
+                    <div className={Style.node}>Node.js</div>
+                  </div>
+                </div>
+                <div className={Style.containerMongoose}>
+                  <div className={Style.skills}>
+                    <div className={Style.mongoose}>Mongoose</div>
+                  </div>
+                </div>
+                <div className={Style.containerMySQL}>
+                  <div className={Style.skills}>
+                    <div className={Style.mysql}>MySQL</div>
+                  </div>
+                </div>
+                <div className={Style.containerThree}>
+                  <div className={Style.skills}>
+                    <div className={Style.three}>Three.js</div>
+                  </div>
+                </div>
               </Container>
             </Col>
           </Row>
