@@ -9,21 +9,31 @@ const BarCharts = () => {
   return (
     <>
       <div className={Style.wrapper}>
-        <Container fluid className={Style.container}>
-          <Row className={Style.row}>
+        <div fluid className={Style.container}>
+          <div className={Style.row}>
             {/* Pic Of Me/As Big As I Want */}
-            <Col id={Style.myPicCol} className="col-sm-6">
+            <Col id={Style.myPicCol} className="col-lg-6">
               <Container className={Style.myPicContainer}>
                 <Row className={Style.myPicRow}>
                   <Col className="col-sm-12" id={Style.myActualPicCol}>
                     <img className={Style.Me} src={Me} alt="Me" />
+                    <h3 className={Style.talkingAboutMeH3}>
+                      Talking about me?
+                    </h3>
+                    <hr className={Style.hr1Me} />
+                    <p className={Style.talkingAboutMe}>
+                      I'm a Free-Lance Full Stack Flex Web Developer in Atlanta,
+                      GA. I have serious passion for UI effects, animations and
+                      creating intuitive, dynamic user experiences.{" "}
+                    </p>
                   </Col>
                 </Row>
               </Container>
             </Col>
+            {/* Pic Of Me/As Big As I Want */}
 
             {/* Bar Chart Area/Neumorphism Stuff */}
-            <Col id={Style.barChartCol} className="col-sm-6">
+            <Col id={Style.barChartCol} className="col-lg-6">
               <Container className={Style.myBarChartContainer}>
                 <div className={Style.containerHTML}>
                   <div className={Style.skills}>
@@ -85,21 +95,21 @@ const BarCharts = () => {
                 <div className={Style.containerThree}>
                   <div className={Style.skills}>
                     <div className={Style.three}>
-                      Three.js<div className={Style.percent}>55%</div>
+                      Three.js<div className={Style.percent}>50%</div>
                     </div>
                   </div>
                 </div>
                 <div className={Style.containerAngular}>
                   <div className={Style.skills}>
                     <div className={Style.angular}>
-                      Angular<div className={Style.percent}>50%</div>
+                      Angular<div className={Style.percent}>45%</div>
                     </div>
                   </div>
                 </div>
               </Container>
             </Col>
-          </Row>
-        </Container>
+          </div>
+        </div>
       </div>
     </>
   );

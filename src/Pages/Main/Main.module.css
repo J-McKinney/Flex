@@ -82,7 +82,7 @@ body::-webkit-scrollbar {
   color: #ffffff;
 }
 
-/* Bar Chart */
+/* Bar Chart!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .barChartContainer {
   width: 100%;
   height: auto;
@@ -129,7 +129,7 @@ body::-webkit-scrollbar {
 }
 
 .hr1Me {
-  border: 1px solid #ffffff;
+  border: 1px hidden hidden solid hidden #ffffff;
   width: 44%;
 }
 
@@ -151,7 +151,7 @@ body::-webkit-scrollbar {
 .moreAboutMe {
   color: #ffffff;
 }
-/* Bar Chart */
+/* Bar Chart!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .portfolioWrapper {
   width: 100%;
@@ -192,34 +192,9 @@ body::-webkit-scrollbar {
   .aboutMeRow {
     flex-direction: column;
   }
-
-  .aboutMePTags {
-    margin-bottom: 50px;
-  }
 }
 
 @media screen and (max-width: 767.5px) {
-  .barChartContainer {
-    margin-bottom: 10%;
-    padding-bottom: 80%;
-  }
-
-  .barChartRow {
-    flex-direction: column;
-    margin-bottom: 10%;
-  }
-
-  #barChartCol {
-    margin-top: 0%;
-  }
-
-  .hr1Me {
-    width: 47%;
-  }
-
-  .moreRow {
-    margin-top: 10%;
-  }
 }
 
 @media screen and (max-width: 760px) {

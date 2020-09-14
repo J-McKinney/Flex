@@ -1,45 +1,12 @@
 import React, { Component } from "react";
-import Me from "../../images/Me.JPG";
 import NavBar from "../../Components/MyNavBar/MyNavBar";
 import Stars from "../../Components/Stars/StarsContainer";
+import BarChart from "../../Components/BarCharts/BarCharts";
 import Footer from "../../Components/MyFooter/MyFooter";
-import { HorizontalBar } from "react-chartjs-2";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Style from "./Main.module.css";
-
-const chart = {
-  labels: [
-    "HTML   ",
-    "CSS   ",
-    "BootStrap   ",
-    "JavaScript   ",
-    "React   ",
-    "Angular   ",
-    "Node.js   ",
-    "Mongoose   ",
-    "MySQL   ",
-    "Three.js   ",
-  ],
-  datasets: [
-    {
-      label: "My Favorite Languages To Code In",
-      backgroundColor: "#61dafb",
-      borderColor: "#61dafb",
-      borderWidth: 1,
-      hoverBackgroundColor: "#61dafb",
-      hoverBorderColor: "#61dafb",
-      // The 2 Sets Of Data Numbers Need To Add Up To 100
-      data: [90, 85, 90, 95, 95, 55, 75, 80, 65, 55],
-    },
-    {
-      backgroundColor: "#ffffff",
-      // The 2 Sets Of Data Numbers Need To Add Up To 100
-      data: [10, 15, 10, 5, 5, 45, 25, 20, 35, 45],
-    },
-  ],
-};
 
 class Main extends Component {
   render() {
@@ -50,7 +17,6 @@ class Main extends Component {
           <div className={Style.starWrapper}>
             <Stars />
           </div>
-          {/* About Me Area */}
           <div className={Style.aboutMeWrapper}>
             <Container className={Style.aboutMeContainer}>
               <Row className={Style.aboutMeHeader}>
@@ -91,84 +57,9 @@ class Main extends Component {
                   </p>
                 </Col>
               </Row>
-              {/* Bar Chart Container */}
-              <div className={Style.barChartContainer}>
-                <Row className={Style.barChartRow}>
-                  <div className="col-md-6" id={Style.MyPicCol}>
-                    <img className={Style.barChartMyPic} src={Me} alt="Me" />
-                    <h3 className={Style.talkingAboutMeH3}>
-                      Talking about me?
-                    </h3>
-                    <hr className={Style.hr1Me} />
-                    <p className={Style.talkingAboutMe}>
-                      I'm a Free-Lance Full Stack Flex Web Developer in Atlanta,
-                      GA. I have serious passion for UI effects, animations and
-                      creating intuitive, dynamic user experiences.{" "}
-                    </p>
-                  </div>
-                  <div className="col-md-6" id={Style.barChartCol}>
-                    <HorizontalBar
-                      className={Style.barChart}
-                      data={chart}
-                      height={400}
-                      width={400}
-                      options={{
-                        animation: {
-                          duration: 0,
-                        },
-                        events: ["null"],
-                        responsive: true,
-                        maintainAspectRatio: true,
-                        title: {
-                          display: false,
-                        },
-                        legend: {
-                          display: false,
-                        },
-                        tooltips: {
-                          enabled: false,
-                        },
-                        scales: {
-                          yAxes: [
-                            {
-                              stacked: true,
-                              ticks: {
-                                suggestedMin: 0,
-                                suggestedMax: 100,
-                                fontSize: 17,
-                                fontColor: "white",
-                                beginAtZero: true,
-                              },
-                              gridLines: {
-                                display: false,
-                              },
-                            },
-                          ],
-                          xAxes: [
-                            {
-                              stacked: true,
-                              ticks: {
-                                suggestedMin: 0,
-                                suggestedMax: 100,
-                                beginAtZero: true,
-                              },
-                              display: 0,
-                            },
-                          ],
-                        },
-                      }}
-                    />
-                  </div>
-                </Row>
-                <br />
-                <Row className={Style.moreRow}>
-                  <h5 className={Style.moreAboutMe}>More...</h5>
-                </Row>
-              </div>
-              {/* Bar Chart Container */}
+              <BarChart />
             </Container>
           </div>
-          {/* About Me Area */}
           {/* Portfolio Section */}
 
           {/* Portfolio Section */}

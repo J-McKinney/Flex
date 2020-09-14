@@ -3,66 +3,98 @@
   height: auto;
   background-color: #282c34;
   box-sizing: border-box;
-  padding-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10%;
   padding-bottom: 5%;
+  position: relative;
 }
 
 .container {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .row {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
 }
 
 #myPicCol {
   text-align: center;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .myPicContainer {
   text-align: center;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .myPicRow {
   text-align: center;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 #myActualPicCol {
   text-align: center;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .Me {
-  width: 350px;
+  width: 400px;
   height: 300px;
+  width: 100%;
+  height: 100%;
   border-radius: 50px;
+  position: relative;
+}
+
+.talkingAboutMeH3 {
+  margin-top: 3%;
+  color: #ffffff;
+}
+
+.hr1Me {
+  border: 1px solid #ffffff;
+  width: 48%;
+}
+
+.talkingAboutMe {
+  color: #ffffff;
 }
 
 #barChartCol {
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 .myBarChartContainer {
   width: 100%;
   height: auto;
   background-color: #282c34;
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 2.5%;
   box-shadow: 15px 15px 15px #0b0d0f, -7.5px -7.5px 15px #444b58;
+  position: relative;
 }
 
 /* Neumorphism Stuff */
-
 .containerHTML,
 .containerCSS,
 .containerBootStrap,
@@ -80,10 +112,12 @@
   padding-bottom: 2.5px;
   margin-bottom: 2%;
   box-shadow: 5px 5px 5px 3px #0b0d0f, -1px -1px 2px 2px #444b58;
+  position: relative;
 }
 
 .skills {
   color: #000000;
+  position: relative;
 }
 
 .html,
@@ -104,10 +138,12 @@
   text-align: start;
   background-color: #61dafb;
   box-shadow: 3px 3px 3px #000000, -1px -1px 5px #cfcfcf;
+  position: relative;
 }
 .percent {
   float: right;
   padding-right: 10px;
+  position: relative;
 }
 
 .html:hover,
@@ -211,5 +247,27 @@
   }
   to {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 1199.5px) {
+  .hr1Me {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #myPicCol,
+  #barChartCol {
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .row {
+    flex-direction: column;
+  }
+  #myPicCol {
+    margin-bottom: 5%;
   }
 }
