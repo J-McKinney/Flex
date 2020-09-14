@@ -24,14 +24,25 @@ const BarCharts = () => {
             {/* Bar Chart Area/Neumorphism Stuff */}
             <Col id={Style.barChartCol} className="col-sm-6">
               <Container className={Style.myBarChartContainer}>
-                <Row className={Style.myBarChartRowHTML}>
-                  <Col className="col-sm-2" id={Style.barChartHTMLName}>
-                    HTML
+                <div className={Style.containerHTML}>
+                  <div className={Style.skills}>
+                    <div className={Style.html}>HTML</div>
+                  </div>
+                </div>
+
+                {/* This works but is lengthy */}
+                {/* <Row className={Style.myBarChartRowHTML}>
+                  <Col className="col-12-sm" id={Style.bar}>
+                    <Row className={Style.row}>
+                      <Col id={Style.tag} className="col-sm-2">
+                        HTML
+                      </Col>
+                      <Col id={Style.barChart} className="col-sm-10">
+                        
+                      </Col>
+                    </Row>
                   </Col>
-                  <Col className="col-sm-10" id={Style.barChartHTMLGraph}>
-                    HTML
-                  </Col>
-                </Row>
+                </Row> */}
 
                 {/* <br />
 
