@@ -9,13 +9,6 @@ import Col from "react-bootstrap/Col";
 import Style from "./Main.module.css";
 
 class Main extends Component {
-  componentDidMount() {
-    console.log("Mount: ", window.visualViewport.pageTop);
-  }
-  componentDidUpdate() {
-    console.log("Update: ", window);
-  }
-
   render() {
     return (
       <>
