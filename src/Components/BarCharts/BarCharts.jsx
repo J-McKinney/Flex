@@ -11,11 +11,12 @@ class BarCharts extends Component {
   };
 
   componentDidMount() {
-    console.log("Mount:visualViewport ", window.visualViewport.pageTop);
     window.addEventListener("scroll", this.onscroll);
+    
+    console.log("Mount:visualViewport ", window.visualViewport.pageTop);
     console.log("MOUNT scrollHeight ", document.body.scrollHeight);
     console.log("MOUNT Rect ", document.body.getBoundingClientRect().top);
-    // console.log("MOUNT Rect ", document.body.getBoundingClientRect().top - window.visualViewport.pageTop);
+    // console.log("MOUNT RectEquation ", document.body.getBoundingClientRect().top - window.visualViewport.pageTop);
   }
   componentWillUnmount() {
     window.removeEventListener("scroll", this.onscroll);
