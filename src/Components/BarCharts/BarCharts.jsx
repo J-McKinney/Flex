@@ -6,23 +6,38 @@ import Col from "react-bootstrap/Col";
 import Style from "./BarCharts.module.css";
 
 class BarCharts extends Component {
+  state = {
+    showGraph: false,
+  };
+
   componentDidMount() {
     console.log("Mount: ", window.visualViewport.pageTop);
-    this.animate();
-
+    window.addEventListener("scroll", this.onscroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.onscroll);
   }
   componentDidUpdate() {
     console.log("Update: ", window.visualViewport.pageTop);
-    this.animate();
   }
 
-  animate() {
-    if (window.visualViewport.pageTop === "826px") {
-      alert("Hello");
-    }
-  }
+  onscroll = () => {
+    console.log("Graph in View");
+  };
+
+  toggleGraph = () => {
+    console.log("Activate Graph!");
+  };
 
   render() {
+    const active = {
+      width: "90%",
+      visibility: "visible",
+    };
+    const hidden = {
+      width: "20%",
+      visibility: "visible",
+    };
     return (
       <>
         <div className={Style.wrapper}>
