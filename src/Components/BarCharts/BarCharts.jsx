@@ -7,37 +7,40 @@ import Style from "./BarCharts.module.css";
 
 class BarCharts extends Component {
   state = {
-    showGraph: false,
+    startGraph: false,
   };
 
   componentDidMount() {
-    console.log("Mount: ", window.visualViewport.pageTop);
+    console.log("Mount:visualViewport ", window.visualViewport.pageTop);
     window.addEventListener("scroll", this.onscroll);
+    console.log("MOUNT scrollHeight ", document.body.scrollHeight);
+    console.log("MOUNT Rect ", document.body.getBoundingClientRect().top);
+    // console.log("MOUNT Rect ", document.body.getBoundingClientRect().top - window.visualViewport.pageTop);
   }
   componentWillUnmount() {
     window.removeEventListener("scroll", this.onscroll);
   }
   componentDidUpdate() {
-    console.log("Update: ", window.visualViewport.pageTop);
+    // console.log("Update: ", window.visualViewport.pageTop);
   }
 
   onscroll = () => {
-    console.log("Graph in View");
+    // console.log("Graph in View");
   };
 
   toggleGraph = () => {
-    console.log("Activate Graph!");
+    // console.log("Activate Graph!");
   };
 
   render() {
-    const active = {
-      width: "90%",
-      visibility: "visible",
-    };
-    const hidden = {
-      width: "20%",
-      visibility: "visible",
-    };
+    // const active = {
+    //   width: "90%",
+    //   visibility: "visible",
+    // };
+    // const hidden = {
+    //   width: "20%",
+    //   visibility: "visible",
+    // };
     return (
       <>
         <div className={Style.wrapper}>
