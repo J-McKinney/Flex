@@ -21,7 +21,7 @@ class Portfolio extends Component {
             <Row>
               <Col className="col-lg-4">
                 <Card border="light" style={{ width: "100%" }}>
-                  <Card.Header>Header</Card.Header>
+                  <Card.Header>Confetti Effect</Card.Header>
                   <Card.Body>
                     <Card.Title>Light Card Title</Card.Title>
                     <Card.Text>
@@ -34,7 +34,7 @@ class Portfolio extends Component {
               </Col>
               <Col className="col-lg-4">
                 <Card border="light" style={{ width: "100%" }}>
-                  <Card.Header>Header</Card.Header>
+                  <Card.Header>Infinity Stars</Card.Header>
                   <Card.Body>
                     <Card.Title>Light Card Title</Card.Title>
                     <Card.Text>
@@ -47,7 +47,7 @@ class Portfolio extends Component {
               </Col>
               <Col className="col-lg-4">
                 <Card border="light" style={{ width: "100%" }}>
-                  <Card.Header>Header</Card.Header>
+                  <Card.Header>Realistic Water</Card.Header>
                   <Card.Body>
                     <Card.Title>Light Card Title</Card.Title>
                     <Card.Text>
@@ -58,6 +58,36 @@ class Portfolio extends Component {
                 </Card>
                 <br />
               </Col>
+            </Row>
+            <Row>
+              <Col className="col-lg-2" />
+              <Col className="col-lg-4">
+                <Card border="light" style={{ width: "100%" }}>
+                  <Card.Header>Cracked Font</Card.Header>
+                  <Card.Body>
+                    <Card.Title>Light Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <br />
+              </Col>
+              <Col className="col-lg-4">
+                <Card border="light" style={{ width: "100%" }}>
+                  <Card.Header>Infinity Stars</Card.Header>
+                  <Card.Body>
+                    <Card.Title>Light Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <br />
+              </Col>
+              <Col className="col-lg-2" />
             </Row>
           </Container>
         </div>
