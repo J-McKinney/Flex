@@ -31,21 +31,48 @@ class BarCharts extends Component {
     if (this.state.scrollPos <= -720) {
       this.setState({ startGraph: true });
     }
+    if (this.state.scrollPos > -420) {
+      this.setState({ startGraph: false });
+    }
   };
 
-  // toggleGraph = () => {
-  //   console.log("Activate Graph!");
-  // };
-
+  // 95% looks like 100% so, minus 5% on all percentages
   render() {
-    // const active = {
-    //   width: "90%",
-    //   visibility: "visible",
-    // };
-    // const hidden = {
-    //   width: "20%",
-    //   visibility: "visible",
-    // };
+    const active95 = {
+      width: "90%",
+      visibility: "visible",
+      transition: "all 2300ms ease-in",
+    };
+    const active90 = {
+      width: "85%",
+      visibility: "visible",
+      transition: "all 2300ms ease-in",
+    };
+    const active85 = {
+      width: "80%",
+      visibility: "visible",
+      transition: "all 2300ms ease-in",
+    };
+    const active80 = {
+      width: "75%",
+      visibility: "visible",
+      transition: "all 2300ms ease-in",
+    };
+    const active50 = {
+      width: "50%",
+      visibility: "visible",
+      transition: "all 2300ms ease-in",
+    };
+    const active45 = {
+      width: "45%",
+      visibility: "visible",
+      transition: "all 2300ms ease-in",
+    };
+    const hidden = {
+      width: "30%",
+      visibility: "visible",
+      transition: "all 200ms ease-out",
+    };
     return (
       <>
         <div className={Style.wrapper}>
@@ -78,7 +105,10 @@ class BarCharts extends Component {
                 <Container className={Style.myBarChartContainer}>
                   <div className={Style.containerHTML}>
                     <div className={Style.skills}>
-                      <div className={Style.html}>
+                      <div
+                        className={Style.html}
+                        style={this.state.startGraph ? active90 : hidden}
+                      >
                         HTML<div className={Style.percent}>90%</div>
                       </div>
                     </div>
@@ -86,63 +116,90 @@ class BarCharts extends Component {
 
                   <div className={Style.containerCSS}>
                     <div className={Style.skills}>
-                      <div className={Style.css}>
+                      <div
+                        className={Style.css}
+                        style={this.state.startGraph ? active90 : hidden}
+                      >
                         CSS<div className={Style.percent}>90%</div>
                       </div>
                     </div>
                   </div>
                   <div className={Style.containerBootStrap}>
                     <div className={Style.skills}>
-                      <div className={Style.bootstrap}>
+                      <div
+                        className={Style.bootstrap}
+                        style={this.state.startGraph ? active95 : hidden}
+                      >
                         BootStrap<div className={Style.percent}>95%</div>
                       </div>
                     </div>
                   </div>
                   <div className={Style.containerJavaScript}>
                     <div className={Style.skills}>
-                      <div className={Style.javascript}>
+                      <div
+                        className={Style.javascript}
+                        style={this.state.startGraph ? active95 : hidden}
+                      >
                         JavaScript<div className={Style.percent}>95%</div>
                       </div>
                     </div>
                   </div>
                   <div className={Style.containerReact}>
                     <div className={Style.skills}>
-                      <div className={Style.react}>
+                      <div
+                        className={Style.react}
+                        style={this.state.startGraph ? active95 : hidden}
+                      >
                         React<div className={Style.percent}>95%</div>
                       </div>
                     </div>
                   </div>
                   <div className={Style.containerNode}>
                     <div className={Style.skills}>
-                      <div className={Style.node}>
+                      <div
+                        className={Style.node}
+                        style={this.state.startGraph ? active85 : hidden}
+                      >
                         Node.js<div className={Style.percent}>85%</div>
                       </div>
                     </div>
                   </div>
                   <div className={Style.containerMongoose}>
                     <div className={Style.skills}>
-                      <div className={Style.mongoose}>
+                      <div
+                        className={Style.mongoose}
+                        style={this.state.startGraph ? active80 : hidden}
+                      >
                         Mongoose<div className={Style.percent}>80%</div>
                       </div>
                     </div>
                   </div>
                   <div className={Style.containerMySQL}>
                     <div className={Style.skills}>
-                      <div className={Style.mysql}>
+                      <div
+                        className={Style.mysql}
+                        style={this.state.startGraph ? active80 : hidden}
+                      >
                         MySQL<div className={Style.percent}>80%</div>
                       </div>
                     </div>
                   </div>
                   <div className={Style.containerThree}>
                     <div className={Style.skills}>
-                      <div className={Style.three}>
+                      <div
+                        className={Style.three}
+                        style={this.state.startGraph ? active50 : hidden}
+                      >
                         Three.js<div className={Style.percent}>50%</div>
                       </div>
                     </div>
                   </div>
                   <div className={Style.containerAngular}>
                     <div className={Style.skills}>
-                      <div className={Style.angular}>
+                      <div
+                        className={Style.angular}
+                        style={this.state.startGraph ? active45 : hidden}
+                      >
                         Angular<div className={Style.percent}>45%</div>
                       </div>
                     </div>
