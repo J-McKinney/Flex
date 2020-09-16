@@ -1,0 +1,10 @@
+.wrapper {
+  width: 100%;
+  height: 500px;
+  background-color: #282c34;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+}

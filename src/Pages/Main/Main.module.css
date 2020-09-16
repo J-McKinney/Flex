@@ -33,7 +33,6 @@ body::-webkit-scrollbar {
   height: auto;
   background-color: #282c34;
   margin-bottom: -0.3vh;
-  /* padding-bottom: 30vh; */
 }
 
 .aboutMeContainer,
@@ -65,7 +64,6 @@ body::-webkit-scrollbar {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
 }
 
 #aboutMeIcon {
@@ -82,110 +80,12 @@ body::-webkit-scrollbar {
   color: #ffffff;
 }
 
-/* Bar Chart!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.barChartContainer {
-  width: 100%;
-  height: auto;
-  margin-top: 5%;
-  /* margin-bottom: 7.5%; */
-  background-color: #282c34;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 7.5%;
-}
-
-.barChartRow {
-  width: 100%;
-  background-color: #282c34;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#MyPicCol,
-#barChartCol {
-  background-color: #282c34;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  margin-bottom: 3%;
-}
-
-.barChartMyPic {
-  margin-top: 3.8%;
-  width: 400px;
-  height: 300px;
-  border-radius: 50px;
-}
-
-.talkingAboutMeH3 {
-  margin-top: 3%;
-  color: #ffffff;
-}
-
-.hr1Me {
-  border: 1px hidden hidden solid hidden #ffffff;
-  width: 44%;
-}
-
-.talkingAboutMe {
-  color: #ffffff;
-}
-
-.barChart {
-  width: 100%;
-  height: auto;
-}
-
-.moreRow {
-  position: absolute;
-  bottom: 0;
-  z-index: 10;
-}
-
-.moreAboutMe {
-  color: #ffffff;
-}
-/* Bar Chart!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
 .portfolioWrapper {
   width: 100%;
   height: 200px;
   position: relative;
   background-color: #282c34;
-  /* background-image: linear-gradient(#282c34, #e4e4e4, #282c34); */
   z-index: 10;
-}
-
-@media screen and (max-width: 1119px) {
-  .hr1Me {
-    width: 53%;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  #MyPicCol,
-  #barChartCol {
-    flex: 50%;
-  }
-
-  #barChartCol {
-    margin-top: 10%;
-  }
-
-  .barChartMyPic {
-    width: 300px;
-    height: 250px;
-  }
-
-  .hr1Me {
-    width: 70%;
-  }
 }
 
 @media screen and (max-width: 770px) {
@@ -194,19 +94,9 @@ body::-webkit-scrollbar {
   }
 }
 
-@media screen and (max-width: 767.5px) {
-}
-
-@media screen and (max-width: 760px) {
-}
-
 @media screen and (max-width: 420px) {
   .hr1Main {
     width: 27.5%;
-  }
-
-  .hr1Me {
-    width: 80%;
   }
 }
 
@@ -221,25 +111,10 @@ body::-webkit-scrollbar {
     width: 250px;
     height: 200px;
   }
-
-  .hr1Me {
-    width: 86%;
-  }
-}
-
-@media screen and (max-width: 311px) {
-  .barChartMyPic {
-    width: 220px;
-    height: 170px;
-  }
 }
 
 @media screen and (max-width: 300px) {
   .hr1Main {
     width: 37.5%;
-  }
-
-  .hr1Me {
-    width: 44%;
   }
 }
