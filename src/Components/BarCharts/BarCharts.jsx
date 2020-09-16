@@ -8,30 +8,34 @@ import Style from "./BarCharts.module.css";
 class BarCharts extends Component {
   state = {
     startGraph: false,
+    scrollPos: 0,
   };
 
   componentDidMount() {
     window.addEventListener("scroll", this.onscroll);
-    
-    console.log("Mount:visualViewport ", window.visualViewport.pageTop);
-    console.log("MOUNT scrollHeight ", document.body.scrollHeight);
-    console.log("MOUNT Rect ", document.body.getBoundingClientRect().top);
-    // console.log("MOUNT RectEquation ", document.body.getBoundingClientRect().top - window.visualViewport.pageTop);
   }
   componentWillUnmount() {
     window.removeEventListener("scroll", this.onscroll);
   }
   componentDidUpdate() {
-    // console.log("Update: ", window.visualViewport.pageTop);
+    // console.log("Update ", this.state.scrollPos);
+    // console.log("Update ", this.state.startGraph);
+    // console.log("Update ",);
   }
+  componentDidEnter() {}
 
   onscroll = () => {
-    // console.log("Graph in View");
+    this.setState({
+      scrollPos: document.body.getBoundingClientRect().top,
+    });
+    if (this.state.scrollPos <= -720) {
+      this.setState({ startGraph: true });
+    }
   };
 
-  toggleGraph = () => {
-    // console.log("Activate Graph!");
-  };
+  // toggleGraph = () => {
+  //   console.log("Activate Graph!");
+  // };
 
   render() {
     // const active = {
