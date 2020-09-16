@@ -84,7 +84,7 @@ class BarCharts extends Component {
                         I'm a Free-Lance Full Stack Flex Web Developer in
                         Atlanta, GA. I have serious passion for UI effects,
                         animations and creating intuitive, dynamic user
-                        experiences.{" "}
+                        experiences.
                       </p>
                     </Col>
                   </Row>
@@ -194,6 +194,13 @@ class BarCharts extends Component {
                   </div>
                 </Container>
               </Col>
+            </div>
+            <div className={Style.rowMore}>
+              <h5 className={Style.moreAboutMe}>
+                <a href="#AboutMePage" className={Style.aboutMePage}>
+                  A Little Bit More...
+                </a>
+              </h5>
             </div>
           </div>
         </div>

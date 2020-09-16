@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
+import Col from "react-bootstrap/Col";
 import Style from "./Portfolio.module.css";
 
 class Portfolio extends Component {
@@ -15,6 +16,48 @@ class Portfolio extends Component {
             </Row>
             <Row className={Style.portfolioRow}>
               <hr className={Style.headingHr} />
+            </Row>
+            <br />
+            <Row>
+              <Col className="col-lg-4">
+                <Card border="light" style={{ width: "100%" }}>
+                  <Card.Header>Header</Card.Header>
+                  <Card.Body>
+                    <Card.Title>Light Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <br />
+              </Col>
+              <Col className="col-lg-4">
+                <Card border="light" style={{ width: "100%" }}>
+                  <Card.Header>Header</Card.Header>
+                  <Card.Body>
+                    <Card.Title>Light Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <br />
+              </Col>
+              <Col className="col-lg-4">
+                <Card border="light" style={{ width: "100%" }}>
+                  <Card.Header>Header</Card.Header>
+                  <Card.Body>
+                    <Card.Title>Light Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <br />
+              </Col>
             </Row>
           </Container>
         </div>

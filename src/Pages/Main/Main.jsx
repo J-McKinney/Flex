@@ -62,6 +62,7 @@ class Main extends Component {
             </Container>
           </div>
           {/* Portfolio Section */}
+          <div id="portfolio-info" />
           <Portfolio />
           {/* Portfolio Section */}
         </div>

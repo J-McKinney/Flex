@@ -139,11 +139,13 @@
   background-color: #61dafb;
   box-shadow: 3px 3px 3px #000000, -1px -1px 5px #cfcfcf;
   position: relative;
+  font-weight: 600;
 }
 .percent {
   float: right;
   padding-right: 10px;
   position: relative;
+  font-weight: 600;
 }
 
 .html:hover,
@@ -157,6 +159,22 @@
 .mysql:hover,
 .three:hover {
   background-color: #00c8ff;
+}
+
+.rowMore {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 5vh;
+}
+
+.aboutMePage {
+  color: #61dafb;
 }
 
 @media screen and (max-width: 1199.5px) {
