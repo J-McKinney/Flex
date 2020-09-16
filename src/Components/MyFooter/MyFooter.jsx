@@ -59,8 +59,8 @@ class MyFooter extends Component {
               </a>
             </Col>
           </Row>
-        </Container>
         <div className={FooterStyle.bottomName}>Jesse McKinney</div>
+        </Container>
       </>
     );
   }
