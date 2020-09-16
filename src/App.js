@@ -2,7 +2,6 @@ import React from "react";
 // import logo from "./logo.svg";
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Main from "./Pages/Main/Main";
-// import BarChart from "./Components/BarCharts/BarCharts";
 import "./App.css";
 
 function App() {

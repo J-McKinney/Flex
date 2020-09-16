@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavBar from "../../Components/MyNavBar/MyNavBar";
 import Stars from "../../Components/Stars/StarsContainer";
 import BarChart from "../../Components/BarCharts/BarCharts";
+import Portfolio from "../../Components/Portfolio/Portfolio";
 import Footer from "../../Components/MyFooter/MyFooter";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -61,7 +62,7 @@ class Main extends Component {
             </Container>
           </div>
           {/* Portfolio Section */}
-
+          <Portfolio />
           {/* Portfolio Section */}
         </div>
         {/* Curved Div */}

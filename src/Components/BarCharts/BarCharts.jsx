@@ -17,12 +17,6 @@ class BarCharts extends Component {
   componentWillUnmount() {
     window.removeEventListener("scroll", this.onscroll);
   }
-  componentDidUpdate() {
-    // console.log("Update ", this.state.scrollPos);
-    // console.log("Update ", this.state.startGraph);
-    // console.log("Update ",);
-  }
-  componentDidEnter() {}
 
   onscroll = () => {
     this.setState({
@@ -36,7 +30,6 @@ class BarCharts extends Component {
     }
   };
 
-  // 95% looks like 100% so, minus 5% on all percentages
   render() {
     const active95 = {
       width: "90%",
@@ -78,7 +71,6 @@ class BarCharts extends Component {
         <div className={Style.wrapper}>
           <div fluid="true" className={Style.container}>
             <div className={Style.row}>
-              {/* Pic Of Me/As Big As I Want */}
               <Col id={Style.myPicCol} className="col-lg-6">
                 <Container className={Style.myPicContainer}>
                   <Row className={Style.myPicRow}>
@@ -98,9 +90,6 @@ class BarCharts extends Component {
                   </Row>
                 </Container>
               </Col>
-              {/* Pic Of Me/As Big As I Want */}
-
-              {/* Bar Chart Area/Neumorphism Stuff */}
               <Col id={Style.barChartCol} className="col-lg-6">
                 <Container className={Style.myBarChartContainer}>
                   <div className={Style.containerHTML}>
@@ -113,7 +102,6 @@ class BarCharts extends Component {
                       </div>
                     </div>
                   </div>
-
                   <div className={Style.containerCSS}>
                     <div className={Style.skills}>
                       <div
