@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
 }
 
 .hr1Main {
-  border: 1px solid #ffffff;
+  background-color: #ffffff;
   width: 10%;
 }
 
