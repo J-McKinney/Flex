@@ -76,7 +76,7 @@ class Portfolio extends Component {
               </Col>
               <Col className="col-lg-4">
                 <Card border="light" style={{ width: "100%" }}>
-                  <Card.Header>Infinity Stars</Card.Header>
+                  <Card.Header>Infinity Squares</Card.Header>
                   <Card.Body>
                     <Card.Title>Light Card Title</Card.Title>
                     <Card.Text>

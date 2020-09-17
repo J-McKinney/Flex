@@ -70,7 +70,7 @@
 }
 
 .hr1Me {
-  border: 1px solid #ffffff;
+  background-color: #ffffff;
   width: 48%;
 }
 
@@ -140,12 +140,14 @@
   box-shadow: 3px 3px 3px #000000, -1px -1px 5px #cfcfcf;
   position: relative;
   font-weight: 600;
+  color: #282c34;
 }
 .percent {
   float: right;
   padding-right: 10px;
   position: relative;
   font-weight: 600;
+  color: #282c34;
 }
 
 .html:hover,
