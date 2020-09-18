@@ -18,57 +18,68 @@ class Portfolio extends Component {
               <hr className={Style.headingHr} />
             </Row>
             <br />
+            {/* First Row */}
             <Row>
+              <Col className="col-lg-4">
+                <Card border="light" style={{ width: "100%" }}>
+                  <Card.Header>Student Life Raft</Card.Header>
+                  <Card.Body>
+                    <Card.Title>Light Card Title</Card.Title>
+                    <Card.Text>
+                      MySQL, Express, Node, JQuery, JavaScript, BootStrap, CSS,
+                      & HTML
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <br />
+              </Col>
+              <Col className="col-lg-4">
+                <Card border="light" style={{ width: "100%" }}>
+                  <Card.Header>SimilTune</Card.Header>
+                  <Card.Body>
+                    <Card.Title>Light Card Title</Card.Title>
+                    <Card.Text>
+                      Mongoose, Express, React, Node, Axios, Moment.js, &
+                      React-BootStrap
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <br />
+              </Col>
               <Col className="col-lg-4">
                 <Card border="light" style={{ width: "100%" }}>
                   <Card.Header>Confetti Effect</Card.Header>
                   <Card.Body>
                     <Card.Title>Light Card Title</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-                <br />
-              </Col>
-              <Col className="col-lg-4">
-                <Card border="light" style={{ width: "100%" }}>
-                  <Card.Header>Infinity Stars</Card.Header>
-                  <Card.Body>
-                    <Card.Title>Light Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-                <br />
-              </Col>
-              <Col className="col-lg-4">
-                <Card border="light" style={{ width: "100%" }}>
-                  <Card.Header>Realistic Water</Card.Header>
-                  <Card.Body>
-                    <Card.Title>Light Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      React, React-Three-Fiber, Three.js, & Three-Meshline
                     </Card.Text>
                   </Card.Body>
                 </Card>
                 <br />
               </Col>
             </Row>
+            {/* First Row */}
+            {/* Second Row */}
             <Row>
-              <Col className="col-lg-2" />
               <Col className="col-lg-4">
                 <Card border="light" style={{ width: "100%" }}>
-                  <Card.Header>Cracked Font</Card.Header>
+                  <Card.Header>3D Globe</Card.Header>
+                  <Card.Body>
+                    <Card.Title>Light Card Title</Card.Title>
+                    <Card.Text>Three.js, HTML, & CSS</Card.Text>
+                  </Card.Body>
+                </Card>
+                <br />
+              </Col>
+              <Col className="col-lg-4">
+                <Card border="light" style={{ width: "100%" }}>
+                  <Card.Header>J-Bot</Card.Header>
                   <Card.Body>
                     <Card.Title>Light Card Title</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      Mongoose, Express, React, Node, Axios, Chart.js,
+                      React-Chart.js, BootStrap, ReactStrap, & Firebase
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -79,16 +90,13 @@ class Portfolio extends Component {
                   <Card.Header>Infinity Squares</Card.Header>
                   <Card.Body>
                     <Card.Title>Light Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
+                    <Card.Text>React, JavaScript, & CSS</Card.Text>
                   </Card.Body>
                 </Card>
                 <br />
               </Col>
-              <Col className="col-lg-2" />
             </Row>
+            {/* Second Row */}
           </Container>
         </div>
       </>
