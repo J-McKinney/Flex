@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Card from "react-bootstrap/Card";
+import SimilTune from "../../images/atlanta.jpg";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import Col from "react-bootstrap/Col";
 import Style from "./Portfolio.module.css";
 
 class Portfolio extends Component {
@@ -19,82 +19,30 @@ class Portfolio extends Component {
             </Row>
             <br />
             {/* First Row */}
-            <Row>
-              <Col className="col-lg-4">
-                <Card border="light" style={{ width: "100%" }}>
-                  <Card.Header>Student Life Raft</Card.Header>
-                  <Card.Body>
-                    <Card.Title>Light Card Title</Card.Title>
-                    <Card.Text>
-                      MySQL, Express, Node, JQuery, JavaScript, BootStrap, CSS,
-                      & HTML
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-                <br />
-              </Col>
-              <Col className="col-lg-4">
-                <Card border="light" style={{ width: "100%" }}>
-                  <Card.Header>SimilTune</Card.Header>
-                  <Card.Body>
-                    <Card.Title>Light Card Title</Card.Title>
-                    <Card.Text>
-                      Mongoose, Express, React, Node, Axios, Moment.js, &
-                      React-BootStrap
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-                <br />
-              </Col>
-              <Col className="col-lg-4">
-                <Card border="light" style={{ width: "100%" }}>
-                  <Card.Header>Confetti Effect</Card.Header>
-                  <Card.Body>
-                    <Card.Title>Light Card Title</Card.Title>
-                    <Card.Text>
-                      React, React-Three-Fiber, Three.js, & Three-Meshline
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-                <br />
-              </Col>
+            <Row className={Style.cardRow}>
+              <div className="col-lg-4">
+                <img id={Style.similTune} src={SimilTune} alt="SimilTune" />
+              </div>
+              <div className="col-lg-4">
+                <img id={Style.jBot} src={SimilTune} alt="SimilTune" />
+              </div>
+              <div className="col-lg-4">
+                <img id={Style.slr} src={SimilTune} alt="SimilTune" />
+              </div>
             </Row>
             {/* First Row */}
+            <br />
             {/* Second Row */}
-            <Row>
-              <Col className="col-lg-4">
-                <Card border="light" style={{ width: "100%" }}>
-                  <Card.Header>3D Globe</Card.Header>
-                  <Card.Body>
-                    <Card.Title>Light Card Title</Card.Title>
-                    <Card.Text>Three.js, HTML, & CSS</Card.Text>
-                  </Card.Body>
-                </Card>
-                <br />
-              </Col>
-              <Col className="col-lg-4">
-                <Card border="light" style={{ width: "100%" }}>
-                  <Card.Header>J-Bot</Card.Header>
-                  <Card.Body>
-                    <Card.Title>Light Card Title</Card.Title>
-                    <Card.Text>
-                      Mongoose, Express, React, Node, Axios, Chart.js,
-                      React-Chart.js, BootStrap, ReactStrap, & Firebase
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-                <br />
-              </Col>
-              <Col className="col-lg-4">
-                <Card border="light" style={{ width: "100%" }}>
-                  <Card.Header>Infinity Squares</Card.Header>
-                  <Card.Body>
-                    <Card.Title>Light Card Title</Card.Title>
-                    <Card.Text>React, JavaScript, & CSS</Card.Text>
-                  </Card.Body>
-                </Card>
-                <br />
-              </Col>
+            <Row className={Style.cardRow}>
+              <div className="col-lg-4">
+                <img id={Style.boxes} src={SimilTune} alt="SimilTune" />
+              </div>
+              <div className="col-lg-4">
+                <img id={Style.confetti} src={SimilTune} alt="SimilTune" />
+              </div>
+              <div className="col-lg-4">
+                <img id={Style.globe} src={SimilTune} alt="SimilTune" />
+              </div>
             </Row>
             {/* Second Row */}
           </Container>

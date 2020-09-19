@@ -31,3 +31,20 @@
   background-color: #61dafb;
   width: 13%;
 }
+
+.cardRow {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+#similTune,
+#jBot,
+#slr,
+#boxes,
+#confetti,
+#globe {
+  height: 240px;
+  width: auto;
+}
