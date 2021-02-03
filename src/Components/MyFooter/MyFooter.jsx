@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import { Fade } from "react-awesome-reveal";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -20,7 +19,7 @@ class MyFooter extends Component {
             <Col className={FooterStyle.Col}>
               <a
                 className={FooterStyle.a}
-                // href="https://mail.google.com/mail/?view=cm&fs=1&to=JesseMcKinney513&#64gmail.com&su=ContactingYouOnPortfolioEmail"
+                // href="https://mail.google.com/mail/?view=cm&fs=1&to=JesseMcKinney513@gmail.com&su=ContactingYouOnPortfolioEmail"
                 href="/"
               >
                 <i id={FooterStyle.envelope} className="far fa-envelope" />
@@ -59,7 +58,7 @@ class MyFooter extends Component {
               </a>
             </Col>
           </Row>
-        <div className={FooterStyle.bottomName}>Jesse McKinney</div>
+          <div className={FooterStyle.bottomName}>Jesse McKinney</div>
         </Container>
       </>
     );

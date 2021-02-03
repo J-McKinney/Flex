@@ -13,10 +13,10 @@ function App() {
       {/* <Main /> */}
       <Router basename="/">
         <Switch>
-          <Route exact path="/Flex" component={Main} />
-          <Route exact path="/Flex/Portfolio" component={Portfolio} />
-          <Route exact path="/Flex/AboutMe" component={AboutMe} />
-          <Route exact path="/Flex/ContactMe" component={ContactMe} />
+          <Route exact path="/" component={Main} />
+          <Route exact path="/Portfolio" component={Portfolio} />
+          <Route exact path="/AboutMe" component={AboutMe} />
+          <Route exact path="/ContactMe" component={ContactMe} />
           <Route exact path="*" component={Error} />
         </Switch>
       </Router>

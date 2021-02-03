@@ -91,7 +91,6 @@ class MyNavBar extends Component {
           <div className={NavStyle.navbar}>
             <div className={NavStyle.buttonWrapper}>
               {/* WRAPPER */}
-
               {/* NAVBAR CONTENT */}
               <Row className={NavStyle.navBarRow}>
                 <Col>
