@@ -106,9 +106,9 @@ class BarCharts extends Component {
                     <div className={Style.skills}>
                       <div
                         className={Style.css}
-                        style={this.state.startGraph ? active90 : hidden}
+                        style={this.state.startGraph ? active95 : hidden}
                       >
-                        CSS<div className={Style.percent}>90%</div>
+                        CSS<div className={Style.percent}>95%</div>
                       </div>
                     </div>
                   </div>
@@ -156,9 +156,9 @@ class BarCharts extends Component {
                     <div className={Style.skills}>
                       <div
                         className={Style.mongoose}
-                        style={this.state.startGraph ? active80 : hidden}
+                        style={this.state.startGraph ? active85 : hidden}
                       >
-                        Mongoose<div className={Style.percent}>80%</div>
+                        Mongoose<div className={Style.percent}>85%</div>
                       </div>
                     </div>
                   </div>
