@@ -1,6 +1,7 @@
 {
   "name": "flex",
   "homepage": "https://j-mckinney.github.io/Flex/",
+  "Author": "Jesse McKinney",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,7 +13,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "swiper": "^5.4.5",
+    "swiper": "^6.5.0",
     "three": "^0.118.3"
   },
   "scripts": {
