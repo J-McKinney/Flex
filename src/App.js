@@ -10,7 +10,6 @@ import "./App.css";
 function App() {
   return (
     <>
-      {/* <Main /> */}
       <Router basename="/">
         <Switch>
           <Route exact path="/Flex" component={Main} />
