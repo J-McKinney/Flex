@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import ForeCast from "../../images/ForeCastShot.png";
+import Confetti from "../../images/ConfettiEffectPic.PNG";
 import SimilTune from "../../images/atlanta.jpg";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -19,11 +21,12 @@ class Portfolio extends Component {
             <br />
             {/* First Row */}
             <Row className={Style.cardRow}>
-              <div className="col-lg-4">
-                <img id={Style.similTune} src={SimilTune} alt="SimilTune" />
+              <div id={Style.foreCastCol} className="col-lg-4">
+                <img id={Style.foreCast} src={ForeCast} alt="Fore-Cast" />
+                {/* https://j-mckinney.github.io/Forecast2/ */}
               </div>
-              <div className="col-lg-4">
-                <img id={Style.jBot} src={SimilTune} alt="SimilTune" />
+              <div id={Style.confettiCol} className="col-lg-4">
+                <img id={Style.confetti} src={Confetti} alt="ConfettiEffect" />
               </div>
               <div className="col-lg-4">
                 <img id={Style.slr} src={SimilTune} alt="SimilTune" />

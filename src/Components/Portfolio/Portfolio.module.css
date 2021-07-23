@@ -39,6 +39,15 @@
   align-content: center;
 }
 
+/* 
+#foreCastCol,
+#confettiCol{
+  height: fit-content;
+  width: fit-content;
+} 
+*/
+
+#foreCast,
 #similTune,
 #jBot,
 #slr,
