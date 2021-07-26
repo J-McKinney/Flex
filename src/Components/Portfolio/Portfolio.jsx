@@ -21,11 +21,11 @@ class Portfolio extends Component {
             <br />
             {/* First Row */}
             <Row className={Style.cardRow}>
-              <div id={Style.foreCastCol} className="col-lg-4">
+              <div className="col-lg-4">
                 <img id={Style.foreCast} src={ForeCast} alt="Fore-Cast" />
                 {/* https://j-mckinney.github.io/Forecast2/ */}
               </div>
-              <div id={Style.confettiCol} className="col-lg-4">
+              <div className="col-lg-4">
                 <img id={Style.confetti} src={Confetti} alt="ConfettiEffect" />
               </div>
               <div className="col-lg-4">
