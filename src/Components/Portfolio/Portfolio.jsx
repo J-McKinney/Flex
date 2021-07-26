@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ForeCast from "../../images/ForeCastShot.png";
 import Confetti from "../../images/ConfettiEffectPic.PNG";
 import SimilTune from "../../images/atlanta.jpg";
+import TriviaGame from "../../images/TriviaGame.png";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Style from "./Portfolio.module.css";
@@ -29,7 +30,7 @@ class Portfolio extends Component {
                 <img id={Style.confetti} src={Confetti} alt="ConfettiEffect" />
               </div>
               <div className="col-lg-4">
-                <img id={Style.slr} src={SimilTune} alt="SimilTune" />
+                <img id={Style.triviaGame} src={TriviaGame} alt="TriviaGame" />
               </div>
             </Row>
             {/* First Row */}
