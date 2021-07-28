@@ -56,8 +56,8 @@ class BarCharts extends Component {
       visibility: "visible",
       transition: "all 2300ms ease-in",
     };
-    const active45 = {
-      width: "45%",
+    const active55 = {
+      width: "55%",
       visibility: "visible",
       transition: "all 2300ms ease-in",
     };
@@ -186,9 +186,9 @@ class BarCharts extends Component {
                     <div className={Style.skills}>
                       <div
                         className={Style.angular}
-                        style={this.state.startGraph ? active45 : hidden}
+                        style={this.state.startGraph ? active55 : hidden}
                       >
-                        Angular<div className={Style.percent}>45%</div>
+                        Angular<div className={Style.percent}>55%</div>
                       </div>
                     </div>
                   </div>
