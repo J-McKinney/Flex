@@ -73,7 +73,7 @@ class MyNavBar extends Component {
       transition: "0.4s",
     };
     const changeBar1 = {
-      transform: "rotate(-45deg) translate(-8px, 6px)",
+      transform: "rotate(-45deg) translate(-7.5px, 6px)",
     };
     const changeBar2 = {
       opacity: "0",

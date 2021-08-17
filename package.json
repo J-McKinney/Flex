@@ -1,7 +1,7 @@
 {
   "name": "flex",
-  "homepage": "https://j-mckinney.github.io/Flex/",
   "Author": "Jesse McKinney",
+  "homepage": "https://j-mckinney.github.io/Flex/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
